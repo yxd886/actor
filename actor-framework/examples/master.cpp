@@ -17,6 +17,7 @@ using start_atom = atom_constant<atom("start")>;
 using heartbeat_atom = atom_constant<atom("heartbeat")>;
 using check_atom = atom_constant<atom("check")>;
 using reply_atom = atom_constant<atom("reply")>;
+using repair_atom = atom_constant<atom("repair")>;
 
 struct log_struct{
   int64_t id;
@@ -102,7 +103,7 @@ public:
       }
         return heartbeat_atom::value;
     },
-      [=](check_atom){
+   [=](check_atom){
         
          std::map < int64_t, int64_t >::iterator it;
          for (it = conn_state.begin(); it != conn_state.end(); it++ ) {
@@ -119,6 +120,11 @@ public:
                     
                 } 
         this->delayed_send(this,DELAY_TIME,check_atom::value);
+    },
+    [=](repair_atom,int64_t id){
+
+      conn_state.insert(std::pair<int64_t,int64_t>(id,1));
+      counter=(id+1>counter)?id+1:counter;
     }
 
   };
@@ -164,6 +170,7 @@ void caf_main(actor_system& system) {
   // Read conf file.
   
   char ip[1000];
+  int repair_flag=0;
   std::map<string, actor> ssh_actors;
   std::ifstream fin("../../actor-framework/examples/Master.conf", std::ios::in);
   
@@ -181,13 +188,50 @@ fin.clear();
 fin.close();
 auto mast_actor=system.spawn<master_actor>(ssh_actors);
 std::cout<<"spawned a master_actor"<<endl;
+
+FILE* fq=fopen("/home/sunmmer/actor/actor-framework/examples/before_log","rb");
+char ch;
+ch = fgetc(fq);
+if(ch!=EOF)
+{
+  std::cout<<"repairing"<<endl;
+  repair_flag=1;
+  fclose(fq);
+FILE* fp=fopen("/home/sunmmer/actor/actor-framework/examples/before_log","rb");
+  if(fp==NULL)
+  {
+     std::cout<<"open file error"<<endl;
+  }
+
+struct log_struct t;
+struct log_struct* p1=&t;
+
+while(!feof(fp))
+{
+  fread(p1,sizeof(struct log_struct),1,fp);
+  anon_send(mast_actor,repair_atom::value,p1->id);
+}
+fclose(fp);
+
+}
+
+
+
+
+
+
+
   // create a new actor that calls 'mirror()'
   // create another actor that calls 'hello_world(mirror_actor)';
   system.middleman().publish(mast_actor, 8888);
   std::cout<<"publish the  master_actor at 8888"<<endl;
+  if(repair_flag==0)
+  {
+    anon_send(mast_actor,start_atom::value);
+    std::cout<<"send start cluster message to mast_actor"<<endl;
+  }
   
-  anon_send(mast_actor,start_atom::value);
-  std::cout<<"send start cluster message to mast_actor"<<endl;
+  
   getchar();
   // system will wait until both actors are destroyed before leaving main
 }
