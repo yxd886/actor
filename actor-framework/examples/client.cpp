@@ -65,15 +65,15 @@ public:
     // philosophers start to think after receiving {think}
     return behavior{
       [=](step_atom) {
-        if(1)
+        if(1==conn_state)
         {
           aout(this)<<"connection normal"<<endl;
           this->delayed_send(this, std::chrono::milliseconds(2000), step_atom::value);
           aout(this)<<"step message sent"<<endl;
           string cpu=getcpu();
-          this->send(master_actor,heartbeat_atom::value,id,cpu);
+          this->send(master_actor,heartbeat_atom::value,id,host_,cpu);
           aout(this)<<"heartbeat message sent"<<endl;
-          //conn_state=0;
+          conn_state=0;
         }else{
           aout(this)<<"try to reconnect"<<endl;
           this->send(this,reconect_atom::value);
@@ -82,7 +82,7 @@ public:
       },
       [=](heartbeat_atom) {
         aout(this)<<"receive heartbeat from master"<<endl;
-        //conn_state=1;
+        conn_state=1;
         
       }/*,
       [=](reconect_atom) {

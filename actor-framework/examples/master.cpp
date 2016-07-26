@@ -47,9 +47,9 @@ public:
          
         
     },
-    [=](heartbeat_atom,int64_t id,string cpu){
+    [=](heartbeat_atom,int64_t id,string host,string cpu){
         
-         aout(this)<<"receive heartbeat from id:"<<id<<" it's cpu: "<<cpu<<endl;
+         aout(this)<<"receive heartbeat from id:"<<id<<"host: "<<host<<" it's cpu: "<<cpu<<endl;
          std::map < int64_t, int64_t >::iterator it;
       it=conn_state.find(id);
       if(it==conn_state.end())
