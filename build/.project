@@ -1,0 +1,3447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>caf-Debug@build</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.makeBuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.append_environment</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.stopOnError</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enabledIncrementalBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.command</key>
+					<value>/usr/bin/make</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.contents</key>
+					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.inc</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.arguments</key>
+					<value></value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildLocation</key>
+					<value>/home/sunmmer/actor/build</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.environment</key>
+					<value>VERBOSE=1|CMAKE_NO_VERBOSE=1|</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.auto</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.clean</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildArguments</key>
+					<value></value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.location</key>
+					<value>/home/sunmmer/actor/build</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.core.errorOutputParser</key>
+					<value>org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
+				</dictionary>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.ScannerConfigBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.make.core.makeNature</nature>
+		<nature>org.eclipse.cdt.make.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[Source directory]</name>
+			<type>2</type>
+			<location>/home/sunmmer/actor/actor-framework</location>
+		</link>
+		<link>
+			<name>[Subprojects]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Subprojects]/caf</name>
+			<type>2</type>
+			<location>/home/sunmmer/actor/actor-framework</location>
+		</link>
+		<link>
+			<name>[Subprojects]/caf_core</name>
+			<type>2</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core</location>
+		</link>
+		<link>
+			<name>[Subprojects]/caf_examples</name>
+			<type>2</type>
+			<location>/home/sunmmer/actor/actor-framework/examples</location>
+		</link>
+		<link>
+			<name>[Subprojects]/caf_io</name>
+			<type>2</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io</location>
+		</link>
+		<link>
+			<name>[Subprojects]/caf_tools</name>
+			<type>2</type>
+			<location>/home/sunmmer/actor/actor-framework/tools</location>
+		</link>
+		<link>
+			<name>[Targets]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/caf-test.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_test/src/caf-test.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/ripemd_160.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/ripemd_160.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/custom_exception_handler.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/custom_exception_handler.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/atom.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/atom.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/local_migration.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/local_migration.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/limited_vector.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/limited_vector.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/composable_behavior.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/composable_behavior.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/constructor_attach.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/constructor_attach.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/blocking_actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/blocking_actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/actor_factory.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/actor_factory.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/stateful_actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/stateful_actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/request_response.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/request_response.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/simple_timeout.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/simple_timeout.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/metaprogramming.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/metaprogramming.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/intrusive_ptr.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/intrusive_ptr.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/streambuf.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/streambuf.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/actor_pool.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/actor_pool.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/variant.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/variant.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/parse_ini.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/parse_ini.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/splitter.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/splitter.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/actor_lifetime.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/actor_lifetime.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/adapter.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/adapter.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/optional.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/optional.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/serial_reply.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/serial_reply.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/message.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/message.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/typed_spawn.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/typed_spawn.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/message_lifetime.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/message_lifetime.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/function_view.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/function_view.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/extract.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/extract.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/local_group.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/local_group.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/typed_response_promise.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/typed_response_promise.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/or_else.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/or_else.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/aout.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/aout.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/sequencer.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/sequencer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/dynamic_spawn.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/dynamic_spawn.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/request_timeout.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/request_timeout.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/actor_termination.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/actor_termination.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/serialization.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/serialization.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/match.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/match.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/expected.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/test/expected.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/remote_actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/test/remote_actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/typed_broker.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/test/typed_broker.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/basp.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/test/basp.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/http_broker.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/test/http_broker.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/remote_spawn.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/test/remote_spawn.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/dynamic_broker.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/test/dynamic_broker.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/typed_remote_actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/test/typed_remote_actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/unpublish.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/test/unpublish.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/automatic_connection.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/test/automatic_connection.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Source Files/remote_group.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/test/remote_group.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Header Files/unit_test.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_test/caf/test/unit_test.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Header Files/unit_test_impl.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_test/caf/test/unit_test_impl.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-test/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/abstract_actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/abstract_actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/abstract_channel.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/abstract_channel.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/abstract_composable_behavior.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/abstract_composable_behavior.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/abstract_group.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/abstract_group.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/abstract_coordinator.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/abstract_coordinator.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/actor_addr.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/actor_addr.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/actor_config.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/actor_config.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/actor_control_block.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/actor_control_block.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/actor_companion.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/actor_companion.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/actor_ostream.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/actor_ostream.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/actor_pool.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/actor_pool.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/actor_proxy.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/actor_proxy.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/actor_registry.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/actor_registry.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/actor_system.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/actor_system.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/actor_system_config.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/actor_system_config.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/adapter.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/adapter.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/atom.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/atom.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/attachable.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/attachable.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/behavior.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/behavior.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/behavior_stack.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/behavior_stack.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/behavior_impl.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/behavior_impl.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/blocking_actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/blocking_actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/blocking_behavior.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/blocking_behavior.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/concatenated_tuple.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/concatenated_tuple.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/config_option.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/config_option.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/continue_helper.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/continue_helper.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/decorated_tuple.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/decorated_tuple.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/default_invoke_result_visitor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/default_invoke_result_visitor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/deep_to_string.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/deep_to_string.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/default_attachable.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/default_attachable.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/deserializer.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/deserializer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/duration.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/duration.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/dynamic_message_data.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/dynamic_message_data.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/error.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/error.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/event_based_actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/event_based_actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/execution_unit.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/execution_unit.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/exit_reason.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/exit_reason.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/forwarding_actor_proxy.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/forwarding_actor_proxy.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/get_mac_addresses.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/get_mac_addresses.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/get_process_id.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/get_process_id.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/get_root_uuid.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/get_root_uuid.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/group.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/group.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/group_manager.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/group_manager.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/group_module.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/group_module.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/invoke_result_visitor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/invoke_result_visitor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/match_case.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/match_case.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/merged_tuple.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/merged_tuple.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/monitorable_actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/monitorable_actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/local_actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/local_actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/logger.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/logger.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/mailbox_element.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/mailbox_element.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/memory.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/memory.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/memory_managed.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/memory_managed.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/message.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/message.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/message_builder.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/message_builder.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/message_data.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/message_data.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/message_handler.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/message_handler.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/message_view.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/message_view.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/node_id.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/node_id.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/parse_ini.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/parse_ini.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/private_thread.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/private_thread.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/ref_counted.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/ref_counted.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/proxy_registry.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/proxy_registry.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/response_promise.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/response_promise.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/replies_to.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/replies_to.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/resumable.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/resumable.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/ripemd_160.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/ripemd_160.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/scheduled_actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/scheduled_actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/scoped_actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/scoped_actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/scoped_execution_unit.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/scoped_execution_unit.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/sec.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/sec.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/serializer.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/serializer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/sequencer.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/sequencer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/shared_spinlock.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/shared_spinlock.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/skip.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/skip.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/splitter.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/splitter.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/sync_request_bouncer.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/sync_request_bouncer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/try_match.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/try_match.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/type_erased_value.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/type_erased_value.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/type_erased_tuple.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/type_erased_tuple.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/uniform_type_info_map.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/uniform_type_info_map.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/unprofiled.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/unprofiled.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/work_stealing.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/work_stealing.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Source Files/work_sharing.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/src/work_sharing.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/abstract_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/abstract_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/index_mapping.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/index_mapping.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/abstract_channel.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/abstract_channel.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_addr.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_addr.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/behavior.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/behavior.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/mailbox_element.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/mailbox_element.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/type_nr.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/type_nr.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/duration.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/duration.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/uniform_type_info_map.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/uniform_type_info_map.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_system.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_system.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/typed_actor_view.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/typed_actor_view.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_companion.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_companion.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/make_message.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/make_message.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/abstract_group.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/abstract_group.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/message_handler.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/message_handler.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/serializer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/serializer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_pool.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_pool.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_cast.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_cast.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_system_config.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_system_config.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/make_type_erased_view.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/make_type_erased_view.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/subscriber.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/mixin/subscriber.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_widget.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/mixin/actor_widget.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/requester.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/mixin/requester.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/sender.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/mixin/sender.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/behavior_changer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/mixin/behavior_changer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/fwd.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/fwd.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/ref_counted.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/ref_counted.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/group_manager.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/group_manager.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/intrusive_ptr.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/intrusive_ptr.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/exec_main.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/exec_main.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/make_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/make_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/may_have_timeout.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/may_have_timeout.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/spawn_options.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/spawn_options.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/error.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/error.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/primitive_variant.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/primitive_variant.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/send.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/send.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/timeout_definition.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/timeout_definition.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/resumable.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/resumable.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/scheduled_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/scheduled_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/infer_handle.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/infer_handle.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/config.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/config.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/type_erased_value.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/type_erased_value.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/unsafe_actor_handle_init.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/unsafe_actor_handle_init.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/all.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/all.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/work_stealing.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/policy/work_stealing.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/work_sharing.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/policy/work_sharing.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/scheduler_policy.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/policy/scheduler_policy.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/profiled.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/policy/profiled.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/unprofiled.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/policy/unprofiled.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/prohibit_top_level_spawn_marker.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/prohibit_top_level_spawn_marker.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/stream_deserializer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/stream_deserializer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/skip.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/skip.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/composable_behavior.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/composable_behavior.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/message_priority.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/message_priority.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/replies_to.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/replies_to.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/locks.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/locks.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/proxy_registry.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/proxy_registry.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/monitorable_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/monitorable_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/message_view.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/message_view.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_control_block.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_control_block.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/group.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/group.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/unit.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/unit.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/response_promise.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/response_promise.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/deep_to_string.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/deep_to_string.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_proxy.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_proxy.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/scheduler.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/scheduler.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/typed_actor_pointer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/typed_actor_pointer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/others.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/others.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/behavior_policy.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/behavior_policy.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/system_messages.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/system_messages.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/invoke_message_result.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/invoke_message_result.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_config.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_config.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/default_attachable.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/default_attachable.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/callback.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/callback.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/node_id.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/node_id.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/binary_deserializer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/binary_deserializer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/composable_behavior_based_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/composable_behavior_based_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/data_processor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/data_processor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/sec.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/sec.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/extend.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/extend.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/response_handle.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/response_handle.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/sequencer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/decorator/sequencer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/splitter.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/decorator/splitter.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/adapter.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/decorator/adapter.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/streambuf.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/streambuf.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/typed_continue_helper.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/typed_continue_helper.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/delegated.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/delegated.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/attachable.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/attachable.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/logger.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/logger.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/weak_intrusive_ptr.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/weak_intrusive_ptr.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/memory.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/memory.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/tuple_vals.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/tuple_vals.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/behavior_impl.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/behavior_impl.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/typed_actor_util.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/typed_actor_util.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/mpi_bind.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/mpi_bind.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/purge_refs.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/purge_refs.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/scope_guard.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/scope_guard.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/message_data.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/message_data.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/select_integer_type.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/select_integer_type.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/safe_equal.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/safe_equal.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/get_process_id.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/get_process_id.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/init_fun_factory.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/init_fun_factory.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/default_invoke_result_visitor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/default_invoke_result_visitor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/try_match.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/try_match.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/build_config.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/build_config.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/get_root_uuid.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/get_root_uuid.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/spawn_fwd.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/spawn_fwd.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/variant_data.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/variant_data.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/embedded.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/embedded.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/mpi_splice.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/mpi_splice.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/arg_match_t.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/arg_match_t.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/pseudo_tuple.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/pseudo_tuple.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/tbind.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/tbind.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/ctm.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/ctm.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/unboxed.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/unboxed.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/sync_request_bouncer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/sync_request_bouncer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/tail_argument_token.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/tail_argument_token.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/network_order.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/network_order.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/disablable_delete.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/disablable_delete.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/cas_weak.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/cas_weak.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/ieee_754.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/ieee_754.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/parse_ini.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/parse_ini.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/ripemd_160.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/ripemd_160.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/merged_tuple.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/merged_tuple.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/comparable.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/comparable.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/type_list.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/type_list.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/type_traits.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/type_traits.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/apply_args.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/apply_args.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/double_ended_queue.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/double_ended_queue.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/behavior_stack.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/behavior_stack.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/type_erased_value_impl.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/type_erased_value_impl.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/intrusive_partitioned_list.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/intrusive_partitioned_list.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/limited_vector.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/limited_vector.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/raw_access.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/raw_access.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/invoke_result_visitor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/invoke_result_visitor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/type_erased_tuple_view.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/type_erased_tuple_view.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/get_mac_addresses.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/get_mac_addresses.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/wrapped.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/wrapped.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/concatenated_tuple.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/concatenated_tuple.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/type_pair.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/type_pair.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/split_join.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/split_join.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/mpi_sequencer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/mpi_sequencer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/blocking_behavior.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/blocking_behavior.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/single_reader_queue.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/single_reader_queue.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/functor_attachable.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/functor_attachable.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/left_or_right.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/left_or_right.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/decorated_tuple.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/decorated_tuple.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/singleton_mixin.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/singleton_mixin.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/try_serialize.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/try_serialize.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/dynamic_message_data.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/dynamic_message_data.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/shared_spinlock.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/shared_spinlock.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/disposer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/disposer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/atom_val.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/atom_val.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/delegate_serialize.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/delegate_serialize.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/tuple_zip.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/tuple_zip.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/int_list.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/int_list.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/implicit_conversions.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/implicit_conversions.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/optional_message_visitor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/optional_message_visitor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/boxed.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/boxed.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/private_thread.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/detail/private_thread.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/stream_serializer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/stream_serializer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/exit_reason.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/exit_reason.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/input_range.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/input_range.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/config_option.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/config_option.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/blocking_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/blocking_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_storage.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_storage.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/after.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/after.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_registry.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_registry.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/deserializer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/deserializer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/unifyn.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/unifyn.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/catch_all.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/catch_all.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/param.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/param.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/typed_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/typed_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/check_typed_input.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/check_typed_input.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/variant.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/variant.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/message.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/message.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/make_type_erased_tuple_view.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/make_type_erased_tuple_view.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/continue_helper.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/continue_helper.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_marker.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_marker.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/atom.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/atom.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_ostream.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_ostream.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/type_erased_tuple.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/type_erased_tuple.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/profiled_coordinator.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/scheduler/profiled_coordinator.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/abstract_coordinator.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/scheduler/abstract_coordinator.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/coordinator.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/scheduler/coordinator.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/worker.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/scheduler/worker.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/make_type_erased_value.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/make_type_erased_value.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/binary_serializer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/binary_serializer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/expected.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/expected.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/static_visitor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/static_visitor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/forwarding_actor_proxy.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/forwarding_actor_proxy.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/message_id.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/message_id.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/abstract_composable_behavior.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/abstract_composable_behavior.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/illegal_message_element.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/illegal_message_element.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/string_algorithms.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/string_algorithms.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/result.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/result.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/message_builder.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/message_builder.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/is_message_sink.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/is_message_sink.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/allowed_unsafe_message_type.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/allowed_unsafe_message_type.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/none.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/none.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/typed_behavior.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/typed_behavior.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/make_counted.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/make_counted.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/event_based_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/event_based_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/scoped_execution_unit.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/scoped_execution_unit.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/function_view.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/function_view.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/execution_unit.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/execution_unit.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/scoped_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/scoped_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/typed_response_promise.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/typed_response_promise.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/is_timeout_or_catch_all.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/is_timeout_or_catch_all.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/config_value.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/config_value.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/memory_managed.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/memory_managed.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/stateful_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/stateful_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/optional.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/optional.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/local_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/local_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/composed_behavior.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/composed_behavior.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/typed_event_based_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/typed_event_based_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/match_case.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/match_case.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/is_typed_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/is_typed_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/actor_factory.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_factory.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Header Files/group_module.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_core/caf/group_module.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_core_shared/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/basp_broker.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/basp_broker.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/abstract_broker.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/abstract_broker.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/broker.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/broker.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/default_multiplexer.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/default_multiplexer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/doorman.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/doorman.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/middleman.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/middleman.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/middleman_actor.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/middleman_actor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/hook.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/hook.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/interfaces.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/interfaces.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/manager.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/manager.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/scribe.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/scribe.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/stream_manager.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/stream_manager.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/test_multiplexer.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/test_multiplexer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/acceptor_manager.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/acceptor_manager.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/multiplexer.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/multiplexer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/header.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/header.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/message_type.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/message_type.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/routing_table.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/routing_table.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Source Files/instance.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/src/instance.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/middleman.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/middleman.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/fwd.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/fwd.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/all.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/all.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/basp_broker.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/basp_broker.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/handle.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/handle.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/typed_broker.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/typed_broker.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/system_messages.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/system_messages.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/receive_policy.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/receive_policy.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/middleman_actor.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/middleman_actor.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/broker_servant.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/broker_servant.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/accept_handle.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/accept_handle.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/doorman.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/doorman.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/hook.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/hook.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/abstract_broker.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/abstract_broker.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/scribe.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/scribe.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/broker.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/broker.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/asio_multiplexer_impl.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/network/asio_multiplexer_impl.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/native_socket.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/network/native_socket.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/acceptor_manager.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/network/acceptor_manager.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/multiplexer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/network/multiplexer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/test_multiplexer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/network/test_multiplexer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/protocol.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/network/protocol.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/default_multiplexer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/network/default_multiplexer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/interfaces.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/network/interfaces.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/stream_manager.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/network/stream_manager.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/operation.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/network/operation.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/asio_multiplexer.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/network/asio_multiplexer.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/manager.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/network/manager.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/all.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/basp/all.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/header.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/basp/header.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/routing_table.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/basp/routing_table.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/instance.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/basp/instance.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/connection_state.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/basp/connection_state.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/message_type.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/basp/message_type.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/version.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/basp/version.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/buffer_type.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/basp/buffer_type.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Header Files/connection_handle.hpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/libcaf_io/caf/io/connection_handle.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] libcaf_io_shared/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] aout</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] aout/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] aout/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] aout/Source Files/aout.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/aout.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] aout/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] aout/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] aout/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] aout/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator/Source Files/calculator.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/message_passing/calculator.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator_behavior</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator_behavior/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator_behavior/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator_behavior/Source Files/calculator_behavior.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/composition/calculator_behavior.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator_behavior/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator_behavior/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator_behavior/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calculator_behavior/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] cell</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] cell/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] cell/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] cell/Source Files/cell.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/message_passing/cell.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] cell/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] cell/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] cell/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] cell/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] client</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] client/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] client/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] client/Source Files/client.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/client.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] client/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] client/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] client/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] client/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_1</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_1/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_1/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_1/Source Files/custom_types_1.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/custom_type/custom_types_1.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_1/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_1/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_1/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_1/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_2</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_2/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_2/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_2/Source Files/custom_types_2.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/custom_type/custom_types_2.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_2/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_2/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_2/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_2/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_3</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_3/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_3/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_3/Source Files/custom_types_3.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/custom_type/custom_types_3.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_3/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_3/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_3/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] custom_types_3/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dancing_kirby</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dancing_kirby/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dancing_kirby/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dancing_kirby/Source Files/dancing_kirby.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/message_passing/dancing_kirby.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dancing_kirby/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dancing_kirby/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dancing_kirby/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dancing_kirby/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] delegating</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] delegating/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] delegating/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] delegating/Source Files/delegating.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/message_passing/delegating.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] delegating/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] delegating/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] delegating/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] delegating/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dictionary_behavior</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dictionary_behavior/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dictionary_behavior/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dictionary_behavior/Source Files/dictionary_behavior.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/composition/dictionary_behavior.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dictionary_behavior/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dictionary_behavior/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dictionary_behavior/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dictionary_behavior/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dining_philosophers</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dining_philosophers/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dining_philosophers/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dining_philosophers/Source Files/dining_philosophers.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/dynamic_behavior/dining_philosophers.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dining_philosophers/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dining_philosophers/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dining_philosophers/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] dining_philosophers/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] distributed_calculator</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] distributed_calculator/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] distributed_calculator/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] distributed_calculator/Source Files/distributed_calculator.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/remoting/distributed_calculator.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] distributed_calculator/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] distributed_calculator/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] distributed_calculator/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] distributed_calculator/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] divider</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] divider/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] divider/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] divider/Source Files/divider.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/message_passing/divider.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] divider/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] divider/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] divider/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] divider/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] fixed_stack</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] fixed_stack/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] fixed_stack/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] fixed_stack/Source Files/fixed_stack.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/message_passing/fixed_stack.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] fixed_stack/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] fixed_stack/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] fixed_stack/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] fixed_stack/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_chat</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_chat/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_chat/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_chat/Source Files/group_chat.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/remoting/group_chat.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_chat/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_chat/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_chat/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_chat/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_server</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_server/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_server/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_server/Source Files/group_server.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/remoting/group_server.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_server/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_server/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_server/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] group_server/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hello_world1</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hello_world1/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hello_world1/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hello_world1/Source Files/hello_world1.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/hello_world1.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hello_world1/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hello_world1/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hello_world1/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hello_world1/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] master</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] master/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] master/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] master/Source Files/master.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/master.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] master/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] master/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] master/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] master/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] prioritizing</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] prioritizing/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] prioritizing/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] prioritizing/Source Files/prioritizing.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/message_passing/prioritizing.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] prioritizing/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] prioritizing/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] prioritizing/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] prioritizing/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] promises</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] promises/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] promises/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] promises/Source Files/promises.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/message_passing/promises.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] promises/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] promises/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] promises/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] promises/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] request</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] request/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] request/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] request/Source Files/request.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/message_passing/request.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] request/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] request/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] request/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] request/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_broker</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_broker/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_broker/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_broker/Source Files/simple_broker.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/broker/simple_broker.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_broker/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_broker/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_broker/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_broker/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_http_broker</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_http_broker/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_http_broker/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_http_broker/Source Files/simple_http_broker.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/broker/simple_http_broker.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_http_broker/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_http_broker/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_http_broker/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] simple_http_broker/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] skip_messages</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] skip_messages/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] skip_messages/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] skip_messages/Source Files/skip_messages.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/dynamic_behavior/skip_messages.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] skip_messages/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] skip_messages/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] skip_messages/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] skip_messages/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] try</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] try/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] try/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] try/Source Files/try.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/try.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] try/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] try/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] try/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] try/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] typed_calculator</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] typed_calculator/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] typed_calculator/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] typed_calculator/Source Files/typed_calculator.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/examples/message_passing/typed_calculator.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] typed_calculator/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] typed_calculator/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] typed_calculator/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] typed_calculator/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-run</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-run/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-run/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-run/Source Files/caf-run.cpp</name>
+			<type>1</type>
+			<location>/home/sunmmer/actor/actor-framework/tools/caf-run.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-run/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-run/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-run/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] caf-run/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

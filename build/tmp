@@ -1,0 +1,119 @@
+-- Could not determine Eclipse version, assuming at least 3.6 (Helios). Adjust CMAKE_ECLIPSE_VERSION if this is wrong.
+-- Found g++ version 4.8
+-- Found OpenCL: OpenCL_LIBRARIES-NOTFOUND
+-- Could NOT find PROTOBUF (missing:  PROTOBUF_LIBRARY PROTOBUF_INCLUDE_DIR) 
+CMake Warning at examples/CMakeLists.txt:80 (find_package):
+  By not providing "FindQt5.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt5", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt5" with any of
+  the following names:
+
+    Qt5Config.cmake
+    qt5-config.cmake
+
+  Add the installation prefix of "Qt5" to CMAKE_PREFIX_PATH or set "Qt5_DIR"
+  to a directory containing one of the above files.  If "Qt5" provides a
+  separate development package or SDK, be sure it has been installed.
+
+
+qmake: could not exec '/usr/lib/x86_64-linux-gnu/qt4/bin/qmake': No such file or directory
+-- Found unsuitable Qt version "" from NOTFOUND
+-- Could NOT find CURL (missing:  CURL_LIBRARY CURL_INCLUDE_DIR) 
+-- Found 49 test suites
+-- Could NOT find Doxygen (missing:  DOXYGEN_EXECUTABLE) 
+-- 
+====================|  Build Summary  |====================
+
+Libcaf version:    0.15.0
+
+Build type:        Debug
+Build static:      no
+Build static only: no
+Runtime checks:    no
+Log level:         none
+With mem. mgmt.:   yes
+With exceptions:   yes
+
+Build I/O module:  yes
+Build tools:       yes
+Build examples:    yes
+Build unit tests:  yes
+Build benchmarks:  no
+Build opencl:      yes
+Build Python:      yes
+
+CXX:               /usr/bin/c++
+CXXFLAGS:          -std=c++11 -Wextra -Wall -pedantic -ftemplate-depth=512 -ftemplate-backtrace-limit=0 -pthread -fPIC -g
+LIBRARIES:         
+
+Source directory:  /home/sunmmer/actor/actor-framework
+Build directory:   /home/sunmmer/actor/build
+Executable path:   /home/sunmmer/actor/build/bin
+Library path:      /home/sunmmer/actor/build/lib
+Install prefix:    /usr/local
+Generator:         Unix Makefiles
+
+===========================================================
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sunmmer/actor/build
+[  0%] Built target all_unit_tests
+[  0%] Built target libcaf_core
+[ 47%] Built target libcaf_core_shared
+[ 47%] Built target libcaf_io
+[ 58%] Built target libcaf_io_shared
+[ 85%] Built target caf-test
+[ 85%] Built target all_examples
+[ 85%] Built target aout
+[ 86%] Built target calculator
+[ 86%] Built target calculator_behavior
+[ 87%] Built target cell
+[ 87%] Building CXX object examples/CMakeFiles/client.dir/client.cpp.o
+/home/sunmmer/actor/actor-framework/examples/client.cpp:96:6: warning: unused parameter ‘system’ [-Wunused-parameter]
+ void caf_main(actor_system& system,const config& cfg) {
+      ^
+/home/sunmmer/actor/actor-framework/examples/client.cpp:96:6: warning: unused parameter ‘cfg’ [-Wunused-parameter]
+In file included from /home/sunmmer/actor/actor-framework/libcaf_core/caf/actor_system_config.hpp:33:0,
+                 from /home/sunmmer/actor/actor-framework/libcaf_core/caf/exec_main.hpp:24,
+                 from /home/sunmmer/actor/actor-framework/libcaf_core/caf/all.hpp:43,
+                 from /home/sunmmer/actor/actor-framework/examples/client.cpp:5:
+/home/sunmmer/actor/actor-framework/libcaf_core/caf/config_option.hpp: In instantiation of ‘caf::config_option_impl<T>::to_sink() [with T = int; caf::config_option::config_reader_sink = std::function<void(long unsigned int, caf::variant<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, long int, bool, caf::atom_value>&)>]::__lambda5’:
+/home/sunmmer/actor/actor-framework/libcaf_core/caf/config_option.hpp:158:52:   required from ‘struct caf::config_option_impl<T>::to_sink() [with T = int; caf::config_option::config_reader_sink = std::function<void(long unsigned int, caf::variant<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, long int, bool, caf::atom_value>&)>]::__lambda5’
+/home/sunmmer/actor/actor-framework/libcaf_core/caf/config_option.hpp:162:5:   required from ‘caf::config_option::config_reader_sink caf::config_option_impl<T>::to_sink() [with T = int; caf::config_option::config_reader_sink = std::function<void(long unsigned int, caf::variant<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, long int, bool, caf::atom_value>&)>]’
+/home/sunmmer/actor/actor-framework/examples/client.cpp:114:1:   required from here
+/home/sunmmer/actor/actor-framework/libcaf_core/caf/config_option.hpp:161:40: error: call of ‘(caf::config_option::type_name_visitor) (int&)’ is ambiguous
+       report_type_error(ln, x, tnv(ref_));
+                                        ^
+/home/sunmmer/actor/actor-framework/libcaf_core/caf/config_option.hpp:76:10: note: candidates are:
+   struct type_name_visitor : static_visitor<const char*> {
+          ^
+/home/sunmmer/actor/actor-framework/libcaf_core/caf/config_option.hpp:78:17: note: const char* caf::config_option::type_name_visitor::operator()(double) const
+     const char* operator()(double) const;
+                 ^
+/home/sunmmer/actor/actor-framework/libcaf_core/caf/config_option.hpp:79:17: note: const char* caf::config_option::type_name_visitor::operator()(int64_t) const
+     const char* operator()(int64_t) const;
+                 ^
+/home/sunmmer/actor/actor-framework/libcaf_core/caf/config_option.hpp:80:17: note: const char* caf::config_option::type_name_visitor::operator()(size_t) const
+     const char* operator()(size_t) const;
+                 ^
+/home/sunmmer/actor/actor-framework/libcaf_core/caf/config_option.hpp:81:17: note: const char* caf::config_option::type_name_visitor::operator()(uint16_t) const
+     const char* operator()(uint16_t) const;
+                 ^
+/home/sunmmer/actor/actor-framework/libcaf_core/caf/config_option.hpp:82:17: note: const char* caf::config_option::type_name_visitor::operator()(bool) const
+     const char* operator()(bool) const;
+                 ^
+In file included from /usr/include/c++/4.8/memory:79:0,
+                 from /home/sunmmer/actor/actor-framework/libcaf_core/caf/fwd.hpp:23,
+                 from /home/sunmmer/actor/actor-framework/libcaf_core/caf/error.hpp:25,
+                 from /home/sunmmer/actor/actor-framework/libcaf_core/caf/sec.hpp:27,
+                 from /home/sunmmer/actor/actor-framework/libcaf_core/caf/all.hpp:25,
+                 from /home/sunmmer/actor/actor-framework/examples/client.cpp:5:
+/usr/include/c++/4.8/functional:2450:7: error: ‘std::function<_Res(_ArgTypes ...)>::function(_Functor) [with _Functor = caf::config_option_impl<T>::to_sink() [with T = int; caf::config_option::config_reader_sink = std::function<void(long unsigned int, caf::variant<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, long int, bool, caf::atom_value>&)>]::__lambda5; <template-parameter-2-2> = void; _Res = void; _ArgTypes = {long unsigned int, caf::variant<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, long int, bool, caf::atom_value>&}]’, declared using local type ‘caf::config_option_impl<T>::to_sink() [with T = int; caf::config_option::config_reader_sink = std::function<void(long unsigned int, caf::variant<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, long int, bool, caf::atom_value>&)>]::__lambda5’, is used but never defined [-fpermissive]
+       function<_Res(_ArgTypes...)>::
+       ^
+make[2]: *** [examples/CMakeFiles/client.dir/client.cpp.o] Error 1
+make[1]: *** [examples/CMakeFiles/client.dir/all] Error 2
+make: *** [all] Error 2

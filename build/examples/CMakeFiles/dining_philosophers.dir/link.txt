@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -Wextra -Wall -pedantic -ftemplate-depth=512 -ftemplate-backtrace-limit=0 -pthread -fPIC -g    CMakeFiles/dining_philosophers.dir/dynamic_behavior/dining_philosophers.cpp.o  -o ../bin/dining_philosophers -rdynamic ../lib/libcaf_core.so.0.15.0 ../lib/libcaf_io.so.0.15.0 ../lib/libcaf_core.so.0.15.0 -Wl,-rpath,/home/sunmmer/actor/build/lib 

@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -Wextra -Wall -pedantic -ftemplate-depth=512 -ftemplate-backtrace-limit=0 -pthread -fPIC -g    CMakeFiles/simple_broker.dir/broker/simple_broker.cpp.o  -o ../bin/simple_broker -rdynamic ../lib/libcaf_core.so.0.15.0 ../lib/libcaf_io.so.0.15.0 ../lib/libcaf_core.so.0.15.0 -Wl,-rpath,/home/sunmmer/actor/build/lib 

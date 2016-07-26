@@ -1,0 +1,8 @@
+# Hashes of file build rules.
+57d27cf3bb2be96b561fd742b4cc6454 CMakeFiles/all_unit_tests
+57d27cf3bb2be96b561fd742b4cc6454 CMakeFiles/gui_dummy
+0d6a2e9f2bf765a10e650c35d06fb694 CMakeFiles/uninstall
+7e74087c7531dd01de99d64f5b230048 examples/CMakeFiles/all_examples
+e84a5dfafd7753386ebbc80e9e927043 libcaf_core/CMakeFiles/libcaf_core
+7a1845c1ef90f24506168abd797cdbbe libcaf_io/CMakeFiles/libcaf_io
+91b70d028722e3131f470ef3e31c6d5b tools/CMakeFiles/all_tools

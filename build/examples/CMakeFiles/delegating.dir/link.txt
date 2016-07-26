@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -Wextra -Wall -pedantic -ftemplate-depth=512 -ftemplate-backtrace-limit=0 -pthread -fPIC -g    CMakeFiles/delegating.dir/message_passing/delegating.cpp.o  -o ../bin/delegating -rdynamic ../lib/libcaf_core.so.0.15.0 ../lib/libcaf_io.so.0.15.0 ../lib/libcaf_core.so.0.15.0 -Wl,-rpath,/home/sunmmer/actor/build/lib 
