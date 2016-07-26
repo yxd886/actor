@@ -53,8 +53,8 @@ string getcpu()
 
 class client_actor : public event_based_actor{
 public:
-    client_actor(actor_config& cfg, const int& id,const int& conn_state, const string& host_,const uint16_t& port_,const actor& master_actor): event_based_actor(cfg),
-   id(id),conn_state(conn_state),host_(host_),port_(port_),master_actor(master_actor){
+    client_actor(actor_config& cfg, const int& id,const int& conn_state,const uint16_t& port_,const actor& master_actor): event_based_actor(cfg),
+   id(id),conn_state(conn_state),port_(port_),master_actor(master_actor){
 
  
     }
@@ -71,7 +71,7 @@ public:
           this->delayed_send(this, std::chrono::milliseconds(2000), step_atom::value);
           aout(this)<<"step message sent"<<endl;
           string cpu=getcpu();
-          this->send(master_actor,heartbeat_atom::value,id,host_,cpu);
+          this->send(master_actor,heartbeat_atom::value,id,cpu);
           aout(this)<<"heartbeat message sent"<<endl;
           conn_state=0;
         }else{
@@ -113,7 +113,6 @@ public:
 
     int64_t id;
     int conn_state;
-    string host_;
     uint16_t port_;
 
     actor master_actor;
@@ -152,7 +151,7 @@ void caf_main(actor_system& system,const config& cfg) {
   auto master_actor_ptr=system.middleman().remote_actor("localhost", 8888);
   std::cout<<"get remote actor"<<endl;
   auto master_actor=*master_actor_ptr;
-  auto worker_actor=system.spawn<client_actor>(cfg.id,1,"localhost",8888,master_actor);
+  auto worker_actor=system.spawn<client_actor>(cfg.id,1,8888,master_actor);
   anon_send(worker_actor,step_atom::value);
   fin.clear();
   fin.close();

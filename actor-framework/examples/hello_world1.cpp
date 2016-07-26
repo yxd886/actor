@@ -11,7 +11,7 @@
 using std::endl;
 using std::string;
 using namespace caf;
-namespace{
+namespace {
 
 void hello_world(event_based_actor* self, const actor& buddy) {
   // send "Hello World!" to our buddy ...
@@ -23,6 +23,11 @@ void hello_world(event_based_actor* self, const actor& buddy) {
     }
   );
 }
+struct log_struct{
+  int64_t id;
+  char host[40];
+
+};
 
 bool GetCpuMem(float &cpu,size_t &mem, int pid,int tid = -1) 
 { 
@@ -130,10 +135,7 @@ behavior mirror(event_based_actor* self) {
 void caf_main(actor_system& system) {
   // our CAF environment
      /* 包含sysinfo结构体信息*/
-    float cpu=0; 
-    size_t mem=0; 
-    int pid=0; 
-    int tid=-1;
+ 
      //if( GetCpuMem( cpu, mem, pid, tid ) ) 
      //   { 
      //       printf("%%CPU:%.1f\tMEM:%dMB\n", cpu, mem); 
@@ -158,8 +160,26 @@ void caf_main(actor_system& system) {
     }
     pclose(pp); //关闭管道
     */
-    string t=getcpu();
-    std::cout<<t<<endl;
+
+    struct log_struct t1,t2;
+    struct log_struct* p1,*p2;
+    p1=&t1;
+    p2=&t2;
+    FILE *fp=fopen("/home/sunmmer/actor/actor-framework/examples/before_log","rb");
+    if(fp==NULL)
+    {
+      std::cout<<"open file error"<<endl;
+    }
+        FILE *fq=fopen("/home/sunmmer/actor/actor-framework/examples/after_log","rb");
+    if(fq==NULL)
+    {
+      std::cout<<"open file error"<<endl;
+    }
+    fread(p1,sizeof(struct log_struct),1,fp);
+    fread(p2,sizeof(struct log_struct),1,fq);
+std::cout<<"host:"<<p1->host<<" id: "<<p1->id<<endl;
+std::cout<<"host:"<<p2->host<<" id: "<<p2->id<<endl; 
+
 
 }
 }

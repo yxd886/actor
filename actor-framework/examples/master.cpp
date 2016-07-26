@@ -17,6 +17,44 @@ using start_atom = atom_constant<atom("start")>;
 using heartbeat_atom = atom_constant<atom("heartbeat")>;
 using check_atom = atom_constant<atom("check")>;
 using reply_atom = atom_constant<atom("reply")>;
+
+struct log_struct{
+  int64_t id;
+  char host[40];
+
+};
+void do_before_log(int64_t id,string host)
+{
+   struct log_struct t;
+   struct log_struct* p=&t;
+   memset(t.host,0,sizeof(t.host));
+   strcpy(t.host,host.c_str());
+   t.id = id;
+   FILE *fp=fopen("/home/sunmmer/actor/actor-framework/examples/before_log","wb");
+    if(fp==NULL)
+    {
+      std::cout<<"open file error"<<endl;
+    }
+    fwrite(p,sizeof(struct log_struct),1,fp);
+    fclose(fp);
+}
+void do_after_log(int64_t id,string host)
+{
+  struct log_struct t;
+   struct log_struct* p=&t;
+   memset(t.host,0,sizeof(t.host));
+   strcpy(t.host,host.c_str());
+   t.id = id;
+   FILE *fp=fopen("/home/sunmmer/actor/actor-framework/examples/after_log","wb");
+    if(fp==NULL)
+    {
+      std::cout<<"open file error"<<endl;
+    }
+    fwrite(p,sizeof(struct log_struct),1,fp);
+    fclose(fp);
+}
+
+
 class master_actor  : public event_based_actor{
 public:
     master_actor(actor_config& cfg, const std::map<string,actor>& ssh_actors): event_based_actor(cfg),
@@ -37,7 +75,11 @@ public:
       {
       counter++;
       this->send(iter->second,start_atom::value,iter->first,(int64_t)counter);
+      
+      do_before_log(counter,iter->first);
       conn_state.insert(std::pair<int64_t,int64_t>(counter,1));
+      do_after_log(counter,iter->first);
+      
       }
       
       
@@ -47,9 +89,9 @@ public:
          
         
     },
-    [=](heartbeat_atom,int64_t id,string host,string cpu){
+    [=](heartbeat_atom,int64_t id,string cpu){
         
-         aout(this)<<"receive heartbeat from id:"<<id<<"host: "<<host<<" it's cpu: "<<cpu<<endl;
+         aout(this)<<"receive heartbeat from id:"<<id<<" it's cpu: "<<cpu<<endl;
          std::map < int64_t, int64_t >::iterator it;
       it=conn_state.find(id);
       if(it==conn_state.end())
