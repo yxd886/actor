@@ -18,6 +18,7 @@ using step_atom = atom_constant<atom("step")>;
 using start_atom = atom_constant<atom("start")>;
 using heartbeat_atom = atom_constant<atom("heartbeat")>;
 using reconect_atom = atom_constant<atom("reconect")>;
+using rebind_atom = atom_constant<atom("rebind")>;
 
 string trim(std::string s) {
   auto not_space = [](char c) { return ! isspace(c); };
@@ -53,17 +54,26 @@ string getcpu()
 
 class client_actor : public event_based_actor{
 public:
-    client_actor(actor_config& cfg, const int& id,const int& conn_state,const uint16_t& port_,const actor& master_actor): event_based_actor(cfg),
-   id(id),conn_state(conn_state),port_(port_),master_actor(master_actor){
+    client_actor(actor_config& cfg, const int& id,const int& conn_state,const uint16_t& port_,const string& host_,const actor& master_actor): event_based_actor(cfg),
+   id(id),conn_state(conn_state),port_(port_),host_(host_),master_actor(master_actor){
 
- 
+  set_default_handler(skip);
     }
+    client_actor(actor_config& cfg, const int& id,const int& conn_state,const uint16_t& port_,const string& host_): event_based_actor(cfg),
+   id(id),conn_state(conn_state),port_(port_),host_(host_),master_actor(unsafe_actor_handle_init){
+
+  set_default_handler(skip);
+    }
+
      //this actor should be created first on the service chain
     behavior make_behavior() override {
         //return firewall_fun(this);
      // send(this, step_atom::value);
     // philosophers start to think after receiving {think}
+     // become(normal_task());
+    //  become(keep_behavior, reconnecting());
     return behavior{
+
       [=](step_atom) {
         if(1==conn_state)
         {
@@ -77,6 +87,7 @@ public:
         }else{
           aout(this)<<"try to reconnect"<<endl;
           this->send(this,reconect_atom::value);
+          this->delayed_send(this, std::chrono::milliseconds(2000), step_atom::value);
         }
 
       },
@@ -84,11 +95,12 @@ public:
         aout(this)<<"receive heartbeat from master"<<endl;
         conn_state=1;
         
-      }/*,
+      },
       [=](reconect_atom) {
         aout(this)<<"reconnecting"<<endl;
         auto mm = system().middleman().actor_handle();
         send(mm, connect_atom::value, host_, port_);
+        aout(this)<<"reconnecting message sent  "<<endl;
         
       },
       [=](ok_atom, node_id&, strong_actor_ptr& new_server, std::set<std::string>&) {
@@ -100,21 +112,102 @@ public:
         master_actor = actor_cast<actor>(new_server);
       },
       [=](const error& err) {
-        aout(this) << "*** could not connect to " << host_
+        aout(this) << "*** could not connect to master"
                    << " at port " << port_
                    << ": " << system().render(err)
                    << " [try again in 2s]"
                    << endl;
         this->delayed_send(this,std::chrono::milliseconds(2000),reconect_atom::value);
-      }*/
+      }
     };
+    
   
+  
+}
+
+/*
+  behavior normal_task() {
+    send(this,step_atom::value);
+    return {
+      [=](step_atom) {
+        if(1==conn_state)
+        {
+          aout(this)<<"connection normal"<<endl;
+          this->delayed_send(this, std::chrono::milliseconds(2000), step_atom::value);
+          aout(this)<<"step message sent"<<endl;
+          string cpu=getcpu();
+          this->send(master_actor,heartbeat_atom::value,id,cpu);
+          aout(this)<<"heartbeat message sent"<<endl;
+          conn_state=0;
+        }else{
+          aout(this)<<"try to reconnect"<<endl;
+          become(keep_behavior, reconnecting());
+        }
+
+      },
+      [=](heartbeat_atom) {
+        aout(this)<<"receive heartbeat from master"<<endl;
+        conn_state=1;
+        
+      }
+    };
   }
 
+
+    behavior reconnecting(std::function<void()> continuation = nullptr) {
+    using std::chrono::seconds;
+    auto mm = system().middleman().actor_handle();
+    aout(this)<<"host: "<<host_<<" port: "<<port_<<endl;
+    send(mm, connect_atom::value, host_, port_);
+    return {
+      [=](ok_atom, node_id&, strong_actor_ptr& new_server, std::set<std::string>&) {
+        if (! new_server) {
+          aout(this) << "*** received invalid remote actor" << endl;
+          return;
+        }
+        aout(this) << "*** connection succeeded, awaiting tasks" << endl;
+        master_actor = actor_cast<actor>(new_server);
+        // return to previous behavior
+        if (continuation) {
+          continuation();
+        }
+        unbecome();
+      },
+      [=](const error& err) {
+        aout(this) << "*** could not connect to " << host_
+                   << " at port " << port_
+                   << ": " << system().render(err)
+                   << " [try again in 3s]"
+                   << endl;
+        delayed_send(mm, seconds(3), connect_atom::value, host_, port_);
+      },
+      [=](rebind_atom, string& nhost, uint16_t nport) {
+        aout(this) << "*** rebind to " << nhost << ":" << nport << endl;
+        using std::swap;
+        swap(host_, nhost);
+        swap(port_, nport);
+        auto send_mm = [=] {
+          unbecome();
+          send(mm, connect_atom::value, host_, port_);
+        };
+        // await pending ok/error message first, then send new request to MM
+        become(
+          keep_behavior,
+          [=](ok_atom&, actor_addr&) {
+            send_mm();
+          },
+          [=](const error&) {
+            send_mm();
+          }
+        );
+      }
+    };
+  }
+*/
     int64_t id;
     int conn_state;
     uint16_t port_;
-
+    string host_;
     actor master_actor;
 
 
@@ -151,11 +244,20 @@ void caf_main(actor_system& system,const config& cfg) {
   auto master_actor_ptr=system.middleman().remote_actor("localhost", 8888);
   std::cout<<"get remote actor"<<endl;
   auto master_actor=*master_actor_ptr;
-  auto worker_actor=system.spawn<client_actor>(cfg.id,1,8888,master_actor);
+  auto worker_actor=system.spawn<client_actor>(cfg.id,1,8888,"localhost",master_actor);
   anon_send(worker_actor,step_atom::value);
   fin.clear();
   fin.close();
   getchar();
+  getchar();
+  getchar();
+  getchar();
+  std::cout<<"exit:"<<endl;
+  getchar();
+  while(1)
+    {
+       getchar();
+    };
   // system will wait until both actors are destroyed before leaving main
 }
 }

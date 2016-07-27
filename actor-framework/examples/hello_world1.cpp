@@ -181,6 +181,7 @@ std::cout<<"host:"<<p1->host<<" id: "<<p1->id<<endl;
 std::cout<<"host:"<<p2->host<<" id: "<<p2->id<<endl; 
 
 
+
 }
 }
 CAF_MAIN(io::middleman)
