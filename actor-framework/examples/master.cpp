@@ -278,7 +278,16 @@ fclose(fp);
 
   // create a new actor that calls 'mirror()'
   // create another actor that calls 'hello_world(mirror_actor)';
-  system.middleman().publish(mast_actor, CONNECT_PORT);
+  auto expected_port=system.middleman().publish(mast_actor, CONNECT_PORT);
+  std::cout<<"expected_port: "<<expected_port<<endl;
+  if(expected_port!=CONNECT_PORT)
+  {
+    while(expected_port!=CONNECT_PORT)
+    {
+      expected_port=system.middleman().publish(mast_actor, CONNECT_PORT);
+      std::cout<<"expected_port: "<<expected_port<<endl;
+    }
+  }
   std::cout<<"publish the  master_actor at CONNECT_PORT"<<endl;
   if(repair_flag==0)
   {
