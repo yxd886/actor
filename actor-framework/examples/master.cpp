@@ -9,7 +9,11 @@ using std::string;
 #define HEARTBEAT_TIME std::chrono::milliseconds(2000)
 #define DELAY_TIME std::chrono::milliseconds(6000)
 #define WORKER_INSTANCES 1
-
+#define CONNECT 1
+#define NOT_CONNECT 0
+#define CONNECT_PORT 8888
+#define ADD 1
+#define REMOVE 0
 using namespace caf;
 namespace {
 using step_atom = atom_constant<atom("step")>;
@@ -48,9 +52,9 @@ public:
       counter++;
       this->send(iter->second,start_atom::value,iter->first,(int64_t)counter);
       
-      do_before_log(counter,iter->first);
+      do_before_log(counter,iter->first,ADD);
       worker_host.insert(std::pair<int64_t,string>(counter,iter->first));
-      conn_state.insert(std::pair<int64_t,int64_t>(counter,1));
+      conn_state.insert(std::pair<int64_t,int64_t>(counter,NOT_CONNECT));
       do_after_log();
       
       }
@@ -72,7 +76,7 @@ public:
         aout(this)<<"find unknow id worker,ignore"<<endl;
       }else{
          aout(this)<<"receive heartbeat from id:"<<id<<" it's cpu: "<<cpu<<endl;
-        it->second=0;
+        it->second=CONNECT;
       }
         
         return heartbeat_atom::value;
@@ -81,20 +85,22 @@ public:
         
          std::map < int64_t, int64_t >::iterator it;
          for (it = conn_state.begin(); it != conn_state.end(); it++ ) {
-                if(it->second==0)
+                if(it->second==CONNECT)
                 {
-                  it->second=1;
+                  it->second=NOT_CONNECT;
                 }else{
 
                     aout(this)<<"worker "<<it->first<<" failure,try to restart it!"<<endl;
                     counter ++;
-                    do_before_log(counter,ssh_actors.begin()->first);
-                    conn_state.insert(std::pair<int64_t,int64_t>(counter,0));
+                    do_before_log(counter,ssh_actors.begin()->first,ADD);
+                    conn_state.insert(std::pair<int64_t,int64_t>(counter,CONNECT));
                     worker_host.insert(std::pair<int64_t,string>(counter,ssh_actors.begin()->first));
+                    do_after_log();
                     std::map < int64_t, string >::iterator iter;
                      std::map < int64_t, int64_t >::iterator at;
                     iter=worker_host.find(it->first);
                     at=it;
+                    do_before_log(iter->first,iter->second,REMOVE);
                     conn_state.erase(at);
                     worker_host.erase(iter);
                     do_after_log();
@@ -110,7 +116,7 @@ public:
     },
     [=](repair_atom,int64_t id,string host){
 
-      conn_state.insert(std::pair<int64_t,int64_t>(id,1));
+      conn_state.insert(std::pair<int64_t,int64_t>(id,NOT_CONNECT));
       worker_host.insert(std::pair<int64_t,string>(id,host));
       counter=(id+1>counter)?id+1:counter;
     }
@@ -123,7 +129,7 @@ public:
     std::map<int64_t,int64_t> conn_state;
     std::map<int64_t,string> worker_host;
     //std::regex reg;
-void do_before_log(int64_t id,string host)
+void do_before_log(int64_t id,string host,int action)
 {
    struct log_struct t;
    struct log_struct* p=&t;
@@ -133,18 +139,31 @@ void do_before_log(int64_t id,string host)
     {
       std::cout<<"open file error"<<endl;
     }
+    std::map < int64_t, string >::iterator it;
+if(action==ADD)
+      {
+        
+        for(it=worker_host.begin();it!=worker_host.end();it++)
+        {
+             strcpy(t.host,it->second.c_str());
+              t.id = it->first;
+              fwrite(p,sizeof(struct log_struct),1,fp);
+        }
+        strcpy(t.host,host.c_str());
+              t.id = id;
+              fwrite(p,sizeof(struct log_struct),1,fp);
+      }else if(action ==REMOVE){
+             
+              for(it=worker_host.begin();it!=worker_host.end();it++)
+              {
+                 if(it->first==id) continue;
+                 strcpy(t.host,it->second.c_str());
+                 t.id = it->first;
+                 fwrite(p,sizeof(struct log_struct),1,fp);
+               }
 
-
-  std::map < int64_t, string >::iterator it;
-  for(it=worker_host.begin();it!=worker_host.end();it++)
-  {
-       strcpy(t.host,it->second.c_str());
-        t.id = it->first;
-        fwrite(p,sizeof(struct log_struct),1,fp);
-  }
-  strcpy(t.host,host.c_str());
-        t.id = id;
-        fwrite(p,sizeof(struct log_struct),1,fp);
+        }
+  
 
     fclose(fp);
 }
@@ -259,8 +278,8 @@ fclose(fp);
 
   // create a new actor that calls 'mirror()'
   // create another actor that calls 'hello_world(mirror_actor)';
-  system.middleman().publish(mast_actor, 8888);
-  std::cout<<"publish the  master_actor at 8888"<<endl;
+  system.middleman().publish(mast_actor, CONNECT_PORT);
+  std::cout<<"publish the  master_actor at CONNECT_PORT"<<endl;
   if(repair_flag==0)
   {
     anon_send(mast_actor,start_atom::value);
