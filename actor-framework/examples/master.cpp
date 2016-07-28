@@ -8,7 +8,7 @@ using std::endl;
 using std::string;
 #define HEARTBEAT_TIME std::chrono::milliseconds(2000)
 #define DELAY_TIME std::chrono::milliseconds(6000)
-#define WORKER_INSTANCES 1
+#define WORKER_INSTANCES 2
 #define CONNECT 1
 #define NOT_CONNECT 0
 #define CONNECT_PORT 8888
@@ -285,7 +285,8 @@ fclose(fp);
     while(expected_port!=CONNECT_PORT)
     {
       expected_port=system.middleman().publish(mast_actor, CONNECT_PORT);
-      std::cout<<"expected_port: "<<expected_port<<endl;
+      //std::cout<<"expected_port: "<<expected_port<<endl;
+      std::cout<<"try to reconnect, please wait! "<<endl;
     }
   }
   std::cout<<"publish the  master_actor at CONNECT_PORT"<<endl;
