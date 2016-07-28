@@ -118,7 +118,7 @@ public:
 
       conn_state.insert(std::pair<int64_t,int64_t>(id,NOT_CONNECT));
       worker_host.insert(std::pair<int64_t,string>(id,host));
-      counter=(id+1>counter)?id+1:counter;
+      counter=(id>counter)?id:counter;
     }
 
   };
