@@ -113,7 +113,12 @@ public:
                 }else{
 
                     aout(this)<<"worker "<<it->first<<" failure,try to restart it!"<<endl;
-                    send(ssh_actors.begin()->second,start_atom::value,ssh_actors.begin()->first,it->first);
+                    counter ++;
+                    do_before_log(counter,ssh_actors.begin()->first);
+                    conn_state.insert(std::pair<int64_t,int64_t>(counter,1));
+                    do_after_log(counter,ssh_actors.begin()->first);
+                    send(ssh_actors.begin()->second,start_atom::value,ssh_actors.begin()->first,counter);
+                    conn_state.erase(it);
                      
                 }
               
@@ -133,6 +138,7 @@ public:
     std::map<string,actor> ssh_actors;
     int64_t counter;
     std::map<int64_t,int64_t> conn_state;
+    std::map<int64_t,string> host_worker;
     //std::regex reg;
 
     
@@ -229,6 +235,9 @@ fclose(fp);
   {
     anon_send(mast_actor,start_atom::value);
     std::cout<<"send start cluster message to mast_actor"<<endl;
+  }else{
+    scoped_actor self{system};
+    self->delayed_send(mast_actor,std::chrono::milliseconds(20000),check_atom::value);
   }
   
   

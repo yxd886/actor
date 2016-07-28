@@ -10,7 +10,9 @@
 #include <linux/kernel.h>
 using std::endl;
 using std::string;
-
+#define CONNECT_PORT 8888
+#define CONNECT 1
+#define NOT_CONNECT 0
 
 using namespace caf;
 namespace {
@@ -54,15 +56,17 @@ string getcpu()
 
 class client_actor : public event_based_actor{
 public:
-    client_actor(actor_config& cfg, const int& id,const int& conn_state,const uint16_t& port_,const string& host_,const actor& master_actor): event_based_actor(cfg),
-   id(id),conn_state(conn_state),port_(port_),host_(host_),master_actor(master_actor){
+    client_actor(actor_config& cfg, const int& id,const uint16_t& port_,const string& host_,const actor& master_actor): event_based_actor(cfg),
+   id(id),port_(port_),host_(host_),master_actor(master_actor){
 
   set_default_handler(skip);
+  conn_state=CONNECT;
     }
-    client_actor(actor_config& cfg, const int& id,const int& conn_state,const uint16_t& port_,const string& host_): event_based_actor(cfg),
-   id(id),conn_state(conn_state),port_(port_),host_(host_),master_actor(unsafe_actor_handle_init){
+    client_actor(actor_config& cfg, const int& id,const uint16_t& port_,const string& host_): event_based_actor(cfg),
+   id(id),port_(port_),host_(host_),master_actor(unsafe_actor_handle_init){
 
   set_default_handler(skip);
+  conn_state=CONNECT;
     }
 
      //this actor should be created first on the service chain
@@ -75,7 +79,7 @@ public:
     return behavior{
 
       [=](step_atom) {
-        if(1==conn_state)
+        if(CONNECT==conn_state)
         {
           aout(this)<<"connection normal"<<endl;
           this->delayed_send(this, std::chrono::milliseconds(2000), step_atom::value);
@@ -83,7 +87,7 @@ public:
           string cpu=getcpu();
           this->send(master_actor,heartbeat_atom::value,id,cpu);
           aout(this)<<"heartbeat message sent"<<endl;
-          conn_state=0;
+          conn_state=NOT_CONNECT;
         }else{
           aout(this)<<"try to reconnect"<<endl;
           this->send(this,reconect_atom::value);
@@ -93,7 +97,7 @@ public:
       },
       [=](heartbeat_atom) {
         aout(this)<<"receive heartbeat from master"<<endl;
-        conn_state=1;
+        conn_state=CONNECT;
         
       },
       [=](reconect_atom) {
@@ -110,6 +114,7 @@ public:
         }
         aout(this) << "*** connection succeeded" << endl;
         master_actor = actor_cast<actor>(new_server);
+        conn_state=CONNECT;
       },
       [=](const error& err) {
         aout(this) << "*** could not connect to master"
@@ -218,6 +223,43 @@ public:
     
 };
 
+class monitorx  : public event_based_actor{
+public:
+    monitorx(actor_config& cfg, const int64_t& id,const string& host,const actor& master_actor): event_based_actor(cfg),worker(unsafe_actor_handle_init), 
+    id(id),host(host),master_actor(master_actor){
+        //nop
+    } //this actor should be created first on the service chain
+    behavior make_behavior() override {
+      auto restart = [=](down_msg&){
+        aout(this)<<"received down message"<<endl;
+        auto worke_actor=this->spawn<client_actor>(id,CONNECT_PORT,host,master_actor);
+        this->monitor(worke_actor);
+        this->send(worke_actor,step_atom::value);
+        worker = worke_actor;
+      };
+      //return monitor_fun(this);
+      set_down_handler(restart);
+      auto worker_actor=this->spawn<client_actor>(id,CONNECT_PORT,host,master_actor);
+      this->monitor(worker_actor);
+      this->send(worker_actor,step_atom::value);
+      worker = worker_actor;
+      return behavior{
+        [=](uint64_t ppa){
+              aout(this)<<endl;
+        }     
+      };
+    }
+
+  
+
+actor worker;
+int64_t id;
+string host;
+actor master_actor;
+    //std::regex reg;
+
+    
+};
 
 class config : public actor_system_config {
 public:
@@ -228,6 +270,8 @@ public:
     .add(id, "id,i", "id number");
   }
 };
+
+
 
 void caf_main(actor_system& system,const config& cfg) {
   // Read conf file.
@@ -241,11 +285,14 @@ void caf_main(actor_system& system,const config& cfg) {
   // create a new actor that calls 'mirror()'
   // create another actor that calls 'hello_world(mirror_actor)';
 
-  auto master_actor_ptr=system.middleman().remote_actor("localhost", 8888);
+  auto master_actor_ptr=system.middleman().remote_actor(ip, CONNECT_PORT);
   std::cout<<"get remote actor"<<endl;
   auto master_actor=*master_actor_ptr;
-  auto worker_actor=system.spawn<client_actor>(cfg.id,1,8888,"localhost",master_actor);
-  anon_send(worker_actor,step_atom::value);
+   //scoped_actor self{system};
+  //auto worker_actor=self->spawn<client_actor>(cfg.id,1,CONNECT_PORT,"localhost",master_actor);
+  //self->monitor(worker_actor);
+  //self->send(worker_actor,step_atom::value);
+  auto monit=system.spawn<monitorx>(cfg.id,ip,master_actor);
   fin.clear();
   fin.close();
   getchar();

@@ -116,20 +116,14 @@ string getcpu()
     
     
 }
+
 behavior mirror(event_based_actor* self) {
   // return the (initial) actor behavior
   return {
-    // a handler for messages containing a single string
-    // that replies with a string
-    [=](const string& what) -> string {
-      // prints "Hello World!" via aout (thread-safe cout wrapper)
-      aout(self) << what << endl;
-      // reply "!dlroW olleH"
-      return string(what.rbegin(), what.rend());
-    }
-  };
-}
 
+
+};
+}
 
 
 void caf_main(actor_system& system) {
@@ -160,26 +154,7 @@ void caf_main(actor_system& system) {
     }
     pclose(pp); //关闭管道
     */
-
-    struct log_struct t1,t2;
-    struct log_struct* p1,*p2;
-    p1=&t1;
-    p2=&t2;
-    FILE *fp=fopen("/home/sunmmer/actor/actor-framework/examples/before_log","rb");
-    if(fp==NULL)
-    {
-      std::cout<<"open file error"<<endl;
-    }
-        FILE *fq=fopen("/home/sunmmer/actor/actor-framework/examples/after_log","rb");
-    if(fq==NULL)
-    {
-      std::cout<<"open file error"<<endl;
-    }
-    fread(p1,sizeof(struct log_struct),1,fp);
-    fread(p2,sizeof(struct log_struct),1,fq);
-std::cout<<"host:"<<p1->host<<" id: "<<p1->id<<endl;
-std::cout<<"host:"<<p2->host<<" id: "<<p2->id<<endl; 
-
+auto actor=system.spawn(mirror);
 
 
 }
