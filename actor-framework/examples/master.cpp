@@ -24,36 +24,7 @@ struct log_struct{
   char host[40];
 
 };
-void do_before_log(int64_t id,string host)
-{
-   struct log_struct t;
-   struct log_struct* p=&t;
-   memset(t.host,0,sizeof(t.host));
-   strcpy(t.host,host.c_str());
-   t.id = id;
-   FILE *fp=fopen("/home/sunmmer/actor/actor-framework/examples/before_log","wb");
-    if(fp==NULL)
-    {
-      std::cout<<"open file error"<<endl;
-    }
-    fwrite(p,sizeof(struct log_struct),1,fp);
-    fclose(fp);
-}
-void do_after_log(int64_t id,string host)
-{
-  struct log_struct t;
-   struct log_struct* p=&t;
-   memset(t.host,0,sizeof(t.host));
-   strcpy(t.host,host.c_str());
-   t.id = id;
-   FILE *fp=fopen("/home/sunmmer/actor/actor-framework/examples/after_log","wb");
-    if(fp==NULL)
-    {
-      std::cout<<"open file error"<<endl;
-    }
-    fwrite(p,sizeof(struct log_struct),1,fp);
-    fclose(fp);
-}
+
 
 
 class master_actor  : public event_based_actor{
@@ -78,8 +49,9 @@ public:
       this->send(iter->second,start_atom::value,iter->first,(int64_t)counter);
       
       do_before_log(counter,iter->first);
+      worker_host.insert(std::pair<int64_t,string>(counter,iter->first));
       conn_state.insert(std::pair<int64_t,int64_t>(counter,1));
-      do_after_log(counter,iter->first);
+      do_after_log();
       
       }
       
@@ -92,15 +64,17 @@ public:
     },
     [=](heartbeat_atom,int64_t id,string cpu){
         
-         aout(this)<<"receive heartbeat from id:"<<id<<" it's cpu: "<<cpu<<endl;
+        
          std::map < int64_t, int64_t >::iterator it;
       it=conn_state.find(id);
       if(it==conn_state.end())
       {
         aout(this)<<"find unknow id worker,ignore"<<endl;
       }else{
+         aout(this)<<"receive heartbeat from id:"<<id<<" it's cpu: "<<cpu<<endl;
         it->second=0;
       }
+        
         return heartbeat_atom::value;
     },
    [=](check_atom){
@@ -115,20 +89,29 @@ public:
                     aout(this)<<"worker "<<it->first<<" failure,try to restart it!"<<endl;
                     counter ++;
                     do_before_log(counter,ssh_actors.begin()->first);
-                    conn_state.insert(std::pair<int64_t,int64_t>(counter,1));
-                    do_after_log(counter,ssh_actors.begin()->first);
+                    conn_state.insert(std::pair<int64_t,int64_t>(counter,0));
+                    worker_host.insert(std::pair<int64_t,string>(counter,ssh_actors.begin()->first));
+                    std::map < int64_t, string >::iterator iter;
+                     std::map < int64_t, int64_t >::iterator at;
+                    iter=worker_host.find(it->first);
+                    at=it;
+                    conn_state.erase(at);
+                    worker_host.erase(iter);
+                    do_after_log();
                     send(ssh_actors.begin()->second,start_atom::value,ssh_actors.begin()->first,counter);
-                    conn_state.erase(it);
+                    
                      
                 }
               
                     
                 } 
+                aout(this)<<"exit loop"<<endl;
         this->delayed_send(this,DELAY_TIME,check_atom::value);
     },
-    [=](repair_atom,int64_t id){
+    [=](repair_atom,int64_t id,string host){
 
       conn_state.insert(std::pair<int64_t,int64_t>(id,1));
+      worker_host.insert(std::pair<int64_t,string>(id,host));
       counter=(id+1>counter)?id+1:counter;
     }
 
@@ -138,9 +121,56 @@ public:
     std::map<string,actor> ssh_actors;
     int64_t counter;
     std::map<int64_t,int64_t> conn_state;
-    std::map<int64_t,string> host_worker;
+    std::map<int64_t,string> worker_host;
     //std::regex reg;
+void do_before_log(int64_t id,string host)
+{
+   struct log_struct t;
+   struct log_struct* p=&t;
+   memset(t.host,0,sizeof(t.host));
+   FILE *fp=fopen("/home/sunmmer/actor/actor-framework/examples/before_log","wb");
+    if(fp==NULL)
+    {
+      std::cout<<"open file error"<<endl;
+    }
 
+
+  std::map < int64_t, string >::iterator it;
+  for(it=worker_host.begin();it!=worker_host.end();it++)
+  {
+       strcpy(t.host,it->second.c_str());
+        t.id = it->first;
+        fwrite(p,sizeof(struct log_struct),1,fp);
+  }
+  strcpy(t.host,host.c_str());
+        t.id = id;
+        fwrite(p,sizeof(struct log_struct),1,fp);
+
+    fclose(fp);
+}
+void do_after_log()
+{
+   struct log_struct t;
+   struct log_struct* p=&t;
+   memset(t.host,0,sizeof(t.host));
+   FILE *fp=fopen("/home/sunmmer/actor/actor-framework/examples/after_log","wb");
+    if(fp==NULL)
+    {
+      std::cout<<"open file error"<<endl;
+    }
+
+
+  std::map < int64_t, string >::iterator it;
+  for(it=worker_host.begin();it!=worker_host.end();it++)
+  {
+       aout(this)<<"worker : "<<it->first<<" host: "<<it->second<<endl;
+       strcpy(t.host,it->second.c_str());
+        t.id = it->first;
+        fwrite(p,sizeof(struct log_struct),1,fp);
+  }
+
+    fclose(fp);
+}
     
 };
 behavior ssh_worker(event_based_actor* self) {
@@ -195,7 +225,7 @@ fin.close();
 auto mast_actor=system.spawn<master_actor>(ssh_actors);
 std::cout<<"spawned a master_actor"<<endl;
 
-FILE* fq=fopen("/home/sunmmer/actor/actor-framework/examples/before_log","rb");
+FILE* fq=fopen("/home/sunmmer/actor/actor-framework/examples/after_log","rb");
 char ch;
 ch = fgetc(fq);
 if(ch!=EOF)
@@ -203,7 +233,7 @@ if(ch!=EOF)
   std::cout<<"repairing"<<endl;
   repair_flag=1;
   fclose(fq);
-FILE* fp=fopen("/home/sunmmer/actor/actor-framework/examples/before_log","rb");
+FILE* fp=fopen("/home/sunmmer/actor/actor-framework/examples/after_log","rb");
   if(fp==NULL)
   {
      std::cout<<"open file error"<<endl;
@@ -215,7 +245,7 @@ struct log_struct* p1=&t;
 while(!feof(fp))
 {
   fread(p1,sizeof(struct log_struct),1,fp);
-  anon_send(mast_actor,repair_atom::value,p1->id);
+  anon_send(mast_actor,repair_atom::value,p1->id,p1->host);
 }
 fclose(fp);
 
