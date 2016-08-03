@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <fstream>
+#include <iostream>
 #include <linux/unistd.h>     /* 包含调用 _syscallX 宏等相关信息*/
 #include <linux/kernel.h>
 #include <unistd.h>
@@ -154,7 +155,26 @@ void caf_main(actor_system& system) {
     }
     pclose(pp); //关闭管道
     */
-auto actor=system.spawn(mirror);
+
+std::fstream in;
+std::string command = "close";
+int argc = 0;
+in.open("/home/sunmmer/actor/actor-framework/examples/command.txt");
+if (!in)
+{
+std::cout << "打开文件失败！" << endl;
+
+}
+while(!in.eof())
+{
+in << command <<endl;
+std::cout << command << " " << argc << endl;
+if(command=="close")
+{
+    std::cout<<"OK"<<std::endl;
+}
+}
+in.close();
 
 
 }

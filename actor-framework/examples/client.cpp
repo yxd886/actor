@@ -85,7 +85,8 @@ public:
           this->delayed_send(this, std::chrono::milliseconds(2000), step_atom::value);
           aout(this)<<"step message sent"<<endl;
           string cpu=getcpu();
-          this->send(master_actor,heartbeat_atom::value,id,cpu);
+          int64_t pid = getpid();
+          this->send(master_actor,heartbeat_atom::value,id,cpu,pid);
           aout(this)<<"heartbeat message sent"<<endl;
           conn_state=NOT_CONNECT;
         }else{

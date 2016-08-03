@@ -9,6 +9,10 @@
 /home/sunmmer/actor/actor-framework/examples/hello_world1.cpp
 stdio.h
 -
+fstream
+-
+iostream
+-
 linux/unistd.h
 -
 linux/kernel.h

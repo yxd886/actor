@@ -22,6 +22,7 @@ using heartbeat_atom = atom_constant<atom("heartbeat")>;
 using check_atom = atom_constant<atom("check")>;
 using reply_atom = atom_constant<atom("reply")>;
 using repair_atom = atom_constant<atom("repair")>;
+using close_atom = atom_constant<atom("close")>;
 
 struct log_struct{
   int64_t id;
@@ -37,6 +38,7 @@ public:
    ssh_actors(ssh_actors){
       counter = 0;
     } //this actor should be created first on the service chain
+
     behavior make_behavior() override {
         //return firewall_fun(this);
         
@@ -66,19 +68,21 @@ public:
          
         
     },
-    [=](heartbeat_atom,int64_t id,string cpu){
+    [=](heartbeat_atom,int64_t id,string cpu,int64_t pid){
         
         
          std::map < int64_t, int64_t >::iterator it;
       it=conn_state.find(id);
       if(it==conn_state.end())
       {
-        aout(this)<<"find unknow id worker,ignore"<<endl;
+        //aout(this)<<"find unknow id worker,ignore"<<endl;
       }else{
-         aout(this)<<"receive heartbeat from id:"<<id<<" it's cpu: "<<cpu<<endl;
+         aout(this)<<"receive heartbeat from id:"<<id<<" it's cpu: "<<cpu<<"it's pid: "<<pid<<endl;
         it->second=CONNECT;
+        pid_worker.insert(std::pair<int64_t,int64_t>(pid,id));
       }
-        
+        readcommand();
+        log_heartbeat();
         return heartbeat_atom::value;
     },
    [=](check_atom){
@@ -103,6 +107,12 @@ public:
                     do_before_log(iter->first,iter->second,REMOVE);
                     conn_state.erase(at);
                     worker_host.erase(iter);
+                    for(at= pid_worker.begin();at!=pid_worker.end();at++)
+                    {
+                      if(at->second == iter->first)
+                        break;
+                    }
+                    pid_worker.erase(at);
                     do_after_log();
                     send(ssh_actors.begin()->second,start_atom::value,ssh_actors.begin()->first,counter);
                     
@@ -119,7 +129,64 @@ public:
       conn_state.insert(std::pair<int64_t,int64_t>(id,NOT_CONNECT));
       worker_host.insert(std::pair<int64_t,string>(id,host));
       counter=(id>counter)?id:counter;
-    }
+    },
+    [=](close_atom,int64_t pid){
+    	std::map<int64_t,int64_t>::iterator pid_worker_it;
+    	std::map<int64_t,string>::iterator worker_host_it;
+    	std::map<string,actor>::iterator host_sshactor_it;
+    	pid_worker_it=pid_worker.find(pid);
+    	if(pid_worker_it!=pid_worker.end())
+    	{
+    		worker_host_it = worker_host.find(pid_worker_it->second);
+    		if(worker_host_it!=worker_host.end())
+    		{
+    			host_sshactor_it = ssh_actors.find(worker_host_it->second);
+    			if(host_sshactor_it!=ssh_actors.end())
+    			{
+    				std::map<int64_t,int64_t>::iterator conn_state_it;
+    				conn_state_it = conn_state.find(pid_worker_it->second);
+    				do_before_log(worker_host_it->first,worker_host_it->second,REMOVE);
+    				pid_worker.erase(pid_worker_it);
+    				worker_host.erase(worker_host_it);
+    				conn_state.erase(conn_state_it);
+    				do_after_log();
+    				send(host_sshactor_it->second,close_atom::value,host_sshactor_it->first,pid);
+
+
+    			}
+    		}
+    	}
+
+       },
+       [=](close_atom){
+           	aout(this)<<"entering close worker part!"<<std::endl;
+            std::map<int64_t,int64_t>::iterator pid_worker_it;
+           	std::map<int64_t,string>::iterator worker_host_it;
+           	std::map<string,actor>::iterator host_sshactor_it;
+           	pid_worker_it=pid_worker.begin();
+           	if(pid_worker_it!=pid_worker.end())
+           	{
+           		worker_host_it = worker_host.find(pid_worker_it->second);
+           		if(worker_host_it!=worker_host.end())
+           		{
+           			host_sshactor_it = ssh_actors.find(worker_host_it->second);
+           			if(host_sshactor_it!=ssh_actors.end())
+           			{
+           				std::map<int64_t,int64_t>::iterator conn_state_it;
+           				conn_state_it = conn_state.find(pid_worker_it->second);
+           				do_before_log(worker_host_it->first,worker_host_it->second,REMOVE);
+           				pid_worker.erase(pid_worker_it);
+           				worker_host.erase(worker_host_it);
+           				conn_state.erase(conn_state_it);
+           				do_after_log();
+           				send(host_sshactor_it->second,close_atom::value,host_sshactor_it->first,pid_worker_it->first);
+
+
+           			}
+           		}
+           	}
+
+              }
 
   };
   }
@@ -128,7 +195,23 @@ public:
     int64_t counter;
     std::map<int64_t,int64_t> conn_state;
     std::map<int64_t,string> worker_host;
+    std::map<int64_t,int64_t> pid_worker;
     //std::regex reg;
+
+void log_heartbeat()
+{
+  std::fstream f;
+  f.open("/home/sunmmer/actor/actor-framework/examples/heartbeat_log.txt",std::ios::out);
+  std::map<int64_t,int64_t>::iterator it;
+  for(it=conn_state.begin();it!=conn_state.end();it++)
+  {
+    std::cout<<"entering heartbeat log"<<endl;
+    std::cout<<"id :"<<it->first<<endl;
+    f<<it->first<<std::endl;
+  }
+  f.close();
+}
+
 void do_before_log(int64_t id,string host,int action)
 {
    struct log_struct t;
@@ -190,6 +273,42 @@ void do_after_log()
 
     fclose(fp);
 }
+void readcommand()
+{
+  std::ifstream in;
+  std::string command = "";
+  int64_t argc = 0;
+  static std::string last_command = "";
+  static int64_t last_argc = 0;
+  in.open("/home/sunmmer/actor/actor-framework/examples/command.txt");
+  if (!in)
+  {
+  std::cout << "打开文件失败！" << endl;
+
+  }
+  if(!in.eof())
+  {
+  in >> command >> argc;
+  }
+  if(command==last_command&&argc==last_argc)
+  {
+
+  }else{
+    if(command=="close")
+    {
+      if(argc!=0)
+      {
+        send(this,close_atom::value,(int64_t)argc);
+      }else{
+        send(this,close_atom::value);
+      }
+    }
+  }
+  last_command = command;
+  last_argc =argc;
+  in.close();
+
+}
     
 };
 behavior ssh_worker(event_based_actor* self) {
@@ -216,6 +335,24 @@ behavior ssh_worker(event_based_actor* self) {
       self->delayed_send(self,HEARTBEAT_TIME,start_atom::value,ip,number);
     } 
       // reply "!dlroW olleH"
+    },
+    [=](close_atom,string ip,int64_t pid){
+    	string t;
+    	pid_t status;
+    	 t= "ssh sunmmer@"+ip+" nohup kill "+std::to_string(pid)+" &";
+    	 const char*a = t.c_str();
+    	       status=std::system(a);
+    	       if (-1 != status&&WIFEXITED(status)&&WEXITSTATUS(status)==0)
+    	     {
+    	       //successful
+    	         printf("run shell script successfully!\n");
+    	     }
+    	     else
+    	     {
+    	       //failure
+    	       aout(self)<<"open failure,try again"<<endl;
+    	       self->delayed_send(self,HEARTBEAT_TIME,close_atom::value,ip,pid);
+    	     }
     }
   };
 }
@@ -227,7 +364,7 @@ void caf_main(actor_system& system) {
   char ip[1000];
   int repair_flag=0;
   std::map<string, actor> ssh_actors;
-  std::ifstream fin("../../actor-framework/examples/Master.conf", std::ios::in);
+  std::ifstream fin("/home/sunmmer/actor/actor-framework/examples/Master.conf", std::ios::in);
   
   while(fin.getline(ip, sizeof(ip)))
 {
@@ -245,8 +382,10 @@ auto mast_actor=system.spawn<master_actor>(ssh_actors);
 std::cout<<"spawned a master_actor"<<endl;
 
 FILE* fq=fopen("/home/sunmmer/actor/actor-framework/examples/after_log","rb");
+std::cout<<"file open success"<<endl;
 char ch;
 ch = fgetc(fq);
+std::cout<<"getc success"<<endl;
 if(ch!=EOF)
 {
   std::cout<<"repairing"<<endl;
@@ -257,7 +396,7 @@ FILE* fp=fopen("/home/sunmmer/actor/actor-framework/examples/after_log","rb");
   {
      std::cout<<"open file error"<<endl;
   }
-
+std::cout<<"file open success"<<endl;
 struct log_struct t;
 struct log_struct* p1=&t;
 
@@ -298,9 +437,10 @@ fclose(fp);
     scoped_actor self{system};
     self->delayed_send(mast_actor,std::chrono::milliseconds(20000),check_atom::value);
   }
-  
-  
+
+
   getchar();
+  
   // system will wait until both actors are destroyed before leaving main
 }
 }
