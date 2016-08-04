@@ -278,7 +278,7 @@ void caf_main(actor_system& system,const config& cfg) {
   // Read conf file.
   
   char ip[1000];
- std::ifstream fin("/home/sunmmer/actor/actor-framework/examples/worker.conf", std::ios::in);
+ std::ifstream fin("/home/net/xiaodong/actor/actor-framework/examples/worker.conf", std::ios::in);
   fin.getline(ip, sizeof(ip));
 
   std::cout<<"ip:"<<ip<<endl;

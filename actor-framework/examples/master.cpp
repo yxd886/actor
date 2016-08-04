@@ -201,12 +201,18 @@ public:
 void log_heartbeat()
 {
   std::fstream f;
-  f.open("/home/sunmmer/actor/actor-framework/examples/heartbeat_log.txt",std::ios::out);
+  f.open("/home/net/xiaodong/actor/actor-framework/examples/heartbeat_log.txt",std::ios::out);
   std::map<int64_t,int64_t>::iterator it;
   for(it=conn_state.begin();it!=conn_state.end();it++)
   {
     std::cout<<"entering heartbeat log"<<endl;
     std::cout<<"id :"<<it->first<<endl;
+    f<<it->first<<std::endl;
+  }
+  f.close();
+  f.open("/home/net/xiaodong/actor/actor-framework/examples/pid_log.txt",std::ios::out);
+  for(it=pid_worker.begin();it!=pid_worker.end();it++)
+  {
     f<<it->first<<std::endl;
   }
   f.close();
@@ -217,7 +223,7 @@ void do_before_log(int64_t id,string host,int action)
    struct log_struct t;
    struct log_struct* p=&t;
    memset(t.host,0,sizeof(t.host));
-   FILE *fp=fopen("/home/sunmmer/actor/actor-framework/examples/before_log","wb");
+   FILE *fp=fopen("/home/net/xiaodong/actor/actor-framework/examples/before_log","wb");
     if(fp==NULL)
     {
       std::cout<<"open file error"<<endl;
@@ -255,7 +261,7 @@ void do_after_log()
    struct log_struct t;
    struct log_struct* p=&t;
    memset(t.host,0,sizeof(t.host));
-   FILE *fp=fopen("/home/sunmmer/actor/actor-framework/examples/after_log","wb");
+   FILE *fp=fopen("/home/net/xiaodong/actor/actor-framework/examples/after_log","wb");
     if(fp==NULL)
     {
       std::cout<<"open file error"<<endl;
@@ -280,7 +286,7 @@ void readcommand()
   int64_t argc = 0;
   static std::string last_command = "";
   static int64_t last_argc = 0;
-  in.open("/home/sunmmer/actor/actor-framework/examples/command.txt");
+  in.open("/home/net/xiaodong/actor/actor-framework/examples/command.txt");
   if (!in)
   {
   std::cout << "打开文件失败！" << endl;
@@ -333,7 +339,7 @@ behavior ssh_worker(event_based_actor* self) {
       // prints "Hello World!" via aout (thread-safe cout wrapper)
       string t;
       pid_t status;
-      t= "ssh sunmmer@"+ip+" nohup /home/sunmmer/actor/build/bin/client -i "+std::to_string(number)+" &";
+      t= "ssh net@"+ip+" nohup /home/net/xiaodong/actor/build/bin/client -i "+std::to_string(number)+" &";
       const char*a = t.c_str();
       status=std::system(a);
       if (-1 != status&&WIFEXITED(status)&&WEXITSTATUS(status)==0)  
@@ -352,7 +358,7 @@ behavior ssh_worker(event_based_actor* self) {
     [=](close_atom,string ip,int64_t pid){
     	string t;
     	pid_t status;
-    	 t= "ssh sunmmer@"+ip+" nohup kill "+std::to_string(pid)+" &";
+    	 t= "ssh net@"+ip+" nohup kill "+std::to_string(pid)+" &";
     	 const char*a = t.c_str();
     	       status=std::system(a);
     	       if (-1 != status&&WIFEXITED(status)&&WEXITSTATUS(status)==0)
@@ -377,7 +383,7 @@ void caf_main(actor_system& system) {
   char ip[1000];
   int repair_flag=0;
   std::map<string, actor> ssh_actors;
-  std::ifstream fin("/home/sunmmer/actor/actor-framework/examples/Master.conf", std::ios::in);
+  std::ifstream fin("/home/net/xiaodong/actor/actor-framework/examples/Master.conf", std::ios::in);
   
   while(fin.getline(ip, sizeof(ip)))
 {
@@ -394,7 +400,7 @@ fin.close();
 auto mast_actor=system.spawn<master_actor>(ssh_actors);
 std::cout<<"spawned a master_actor"<<endl;
 
-FILE* fq=fopen("/home/sunmmer/actor/actor-framework/examples/after_log","rb");
+FILE* fq=fopen("/home/net/xiaodong/actor/actor-framework/examples/after_log","rb");
 std::cout<<"file open success"<<endl;
 char ch;
 ch = fgetc(fq);
@@ -404,7 +410,7 @@ if(ch!=EOF)
   std::cout<<"repairing"<<endl;
   repair_flag=1;
   fclose(fq);
-FILE* fp=fopen("/home/sunmmer/actor/actor-framework/examples/after_log","rb");
+FILE* fp=fopen("/home/net/xiaodong/actor/actor-framework/examples/after_log","rb");
   if(fp==NULL)
   {
      std::cout<<"open file error"<<endl;
@@ -447,6 +453,7 @@ fclose(fp);
     anon_send(mast_actor,start_atom::value);
     std::cout<<"send start cluster message to mast_actor"<<endl;
   }else{
+    std::cout<<"repairing model"<<endl;
     scoped_actor self{system};
     self->delayed_send(mast_actor,std::chrono::milliseconds(20000),check_atom::value);
   }

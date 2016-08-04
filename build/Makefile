@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sunmmer/actor/actor-framework
+CMAKE_SOURCE_DIR = /home/net/xiaodong/actor/actor-framework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sunmmer/actor/build
+CMAKE_BINARY_DIR = /home/net/xiaodong/actor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,9 +120,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunmmer/actor/build/CMakeFiles /home/sunmmer/actor/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/net/xiaodong/actor/build/CMakeFiles /home/net/xiaodong/actor/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunmmer/actor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/net/xiaodong/actor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -330,6 +330,19 @@ client: cmake_check_build_system
 client/fast:
 	$(MAKE) -f examples/CMakeFiles/client.dir/build.make examples/CMakeFiles/client.dir/build
 .PHONY : client/fast
+
+#=============================================================================
+# Target rules for targets named curl_fuse
+
+# Build rule for target.
+curl_fuse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 curl_fuse
+.PHONY : curl_fuse
+
+# fast build rule for target.
+curl_fuse/fast:
+	$(MAKE) -f examples/CMakeFiles/curl_fuse.dir/build.make examples/CMakeFiles/curl_fuse.dir/build
+.PHONY : curl_fuse/fast
 
 #=============================================================================
 # Target rules for targets named custom_types_1
@@ -1870,6 +1883,7 @@ help:
 	@echo "... calculator_behavior"
 	@echo "... cell"
 	@echo "... client"
+	@echo "... curl_fuse"
 	@echo "... custom_types_1"
 	@echo "... custom_types_2"
 	@echo "... custom_types_3"

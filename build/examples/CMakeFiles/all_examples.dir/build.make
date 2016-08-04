@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sunmmer/actor/actor-framework
+CMAKE_SOURCE_DIR = /home/net/xiaodong/actor/actor-framework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sunmmer/actor/build
+CMAKE_BINARY_DIR = /home/net/xiaodong/actor/build
 
 # Utility rule file for all_examples.
 
@@ -56,10 +56,10 @@ examples/CMakeFiles/all_examples.dir/build: all_examples
 .PHONY : examples/CMakeFiles/all_examples.dir/build
 
 examples/CMakeFiles/all_examples.dir/clean:
-	cd /home/sunmmer/actor/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/all_examples.dir/cmake_clean.cmake
+	cd /home/net/xiaodong/actor/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/all_examples.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/all_examples.dir/clean
 
 examples/CMakeFiles/all_examples.dir/depend:
-	cd /home/sunmmer/actor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sunmmer/actor/actor-framework /home/sunmmer/actor/actor-framework/examples /home/sunmmer/actor/build /home/sunmmer/actor/build/examples /home/sunmmer/actor/build/examples/CMakeFiles/all_examples.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/net/xiaodong/actor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/net/xiaodong/actor/actor-framework /home/net/xiaodong/actor/actor-framework/examples /home/net/xiaodong/actor/build /home/net/xiaodong/actor/build/examples /home/net/xiaodong/actor/build/examples/CMakeFiles/all_examples.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/CMakeFiles/all_examples.dir/depend
 

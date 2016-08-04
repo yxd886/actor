@@ -1,4 +1,4 @@
-# Install script for directory: /home/sunmmer/actor/actor-framework
+# Install script for directory: /home/net/xiaodong/actor/actor-framework
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ IF(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     STRING(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   ELSE(BUILD_TYPE)
-    SET(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    SET(CMAKE_INSTALL_CONFIG_NAME "RelWithDebInfo")
   ENDIF(BUILD_TYPE)
   MESSAGE(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 ENDIF(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
@@ -33,23 +33,23 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/caf" TYPE DIRECTORY FILES "/home/sunmmer/actor/actor-framework/libcaf_core/caf/" FILES_MATCHING REGEX "/[^/]*\\.hpp$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/caf" TYPE DIRECTORY FILES "/home/net/xiaodong/actor/actor-framework/libcaf_core/caf/" FILES_MATCHING REGEX "/[^/]*\\.hpp$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/caf" TYPE DIRECTORY FILES "/home/sunmmer/actor/actor-framework/libcaf_io/caf/" FILES_MATCHING REGEX "/[^/]*\\.hpp$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/caf" TYPE DIRECTORY FILES "/home/net/xiaodong/actor/actor-framework/libcaf_io/caf/" FILES_MATCHING REGEX "/[^/]*\\.hpp$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/caf" TYPE DIRECTORY FILES "/home/sunmmer/actor/actor-framework/libcaf_test/caf/" FILES_MATCHING REGEX "/[^/]*\\.hpp$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/caf" TYPE DIRECTORY FILES "/home/net/xiaodong/actor/actor-framework/libcaf_test/caf/" FILES_MATCHING REGEX "/[^/]*\\.hpp$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/sunmmer/actor/build/libcaf_core/cmake_install.cmake")
-  INCLUDE("/home/sunmmer/actor/build/libcaf_io/cmake_install.cmake")
-  INCLUDE("/home/sunmmer/actor/build/examples/cmake_install.cmake")
-  INCLUDE("/home/sunmmer/actor/build/tools/cmake_install.cmake")
+  INCLUDE("/home/net/xiaodong/actor/build/libcaf_core/cmake_install.cmake")
+  INCLUDE("/home/net/xiaodong/actor/build/libcaf_io/cmake_install.cmake")
+  INCLUDE("/home/net/xiaodong/actor/build/examples/cmake_install.cmake")
+  INCLUDE("/home/net/xiaodong/actor/build/tools/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -59,7 +59,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/sunmmer/actor/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/net/xiaodong/actor/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/sunmmer/actor/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/net/xiaodong/actor/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

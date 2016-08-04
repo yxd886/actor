@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sunmmer/actor/actor-framework
+CMAKE_SOURCE_DIR = /home/net/xiaodong/actor/actor-framework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sunmmer/actor/build
+CMAKE_BINARY_DIR = /home/net/xiaodong/actor/build
 
 # Utility rule file for all_tools.
 
@@ -56,10 +56,10 @@ tools/CMakeFiles/all_tools.dir/build: all_tools
 .PHONY : tools/CMakeFiles/all_tools.dir/build
 
 tools/CMakeFiles/all_tools.dir/clean:
-	cd /home/sunmmer/actor/build/tools && $(CMAKE_COMMAND) -P CMakeFiles/all_tools.dir/cmake_clean.cmake
+	cd /home/net/xiaodong/actor/build/tools && $(CMAKE_COMMAND) -P CMakeFiles/all_tools.dir/cmake_clean.cmake
 .PHONY : tools/CMakeFiles/all_tools.dir/clean
 
 tools/CMakeFiles/all_tools.dir/depend:
-	cd /home/sunmmer/actor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sunmmer/actor/actor-framework /home/sunmmer/actor/actor-framework/tools /home/sunmmer/actor/build /home/sunmmer/actor/build/tools /home/sunmmer/actor/build/tools/CMakeFiles/all_tools.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/net/xiaodong/actor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/net/xiaodong/actor/actor-framework /home/net/xiaodong/actor/actor-framework/tools /home/net/xiaodong/actor/build /home/net/xiaodong/actor/build/tools /home/net/xiaodong/actor/build/tools/CMakeFiles/all_tools.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/CMakeFiles/all_tools.dir/depend
 

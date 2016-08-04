@@ -1,9 +1,9 @@
-if (NOT EXISTS "/home/sunmmer/actor/build/install_manifest.txt")
+if (NOT EXISTS "/home/net/xiaodong/actor/build/install_manifest.txt")
     message(FATAL_ERROR "Cannot find install manifest:
-\"/home/sunmmer/actor/build/install_manifest.txt\"")
-endif(NOT EXISTS "/home/sunmmer/actor/build/install_manifest.txt")
+\"/home/net/xiaodong/actor/build/install_manifest.txt\"")
+endif(NOT EXISTS "/home/net/xiaodong/actor/build/install_manifest.txt")
 
-file(READ "/home/sunmmer/actor/build/install_manifest.txt" files)
+file(READ "/home/net/xiaodong/actor/build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 list(REVERSE files)
 foreach (file ${files})

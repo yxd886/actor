@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sunmmer/actor/actor-framework
+CMAKE_SOURCE_DIR = /home/net/xiaodong/actor/actor-framework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sunmmer/actor/build
+CMAKE_BINARY_DIR = /home/net/xiaodong/actor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,14 +120,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sunmmer/actor/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sunmmer/actor/build/CMakeFiles /home/sunmmer/actor/build/examples/CMakeFiles/progress.marks
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunmmer/actor/build/CMakeFiles 0
+	cd /home/net/xiaodong/actor/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/net/xiaodong/actor/build/CMakeFiles /home/net/xiaodong/actor/build/examples/CMakeFiles/progress.marks
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/net/xiaodong/actor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/clean
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/clean
 .PHONY : clean
 
 # The main clean target
@@ -136,22 +136,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/preinstall
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/preinstall
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sunmmer/actor/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/net/xiaodong/actor/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/CMakeFiles/all_examples.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/all_examples.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/all_examples.dir/rule
 .PHONY : examples/CMakeFiles/all_examples.dir/rule
 
 # Convenience name for target.
@@ -160,12 +160,12 @@ all_examples: examples/CMakeFiles/all_examples.dir/rule
 
 # fast build rule for target.
 all_examples/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/all_examples.dir/build.make examples/CMakeFiles/all_examples.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/all_examples.dir/build.make examples/CMakeFiles/all_examples.dir/build
 .PHONY : all_examples/fast
 
 # Convenience name for target.
 examples/CMakeFiles/aout.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/aout.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/aout.dir/rule
 .PHONY : examples/CMakeFiles/aout.dir/rule
 
 # Convenience name for target.
@@ -174,12 +174,12 @@ aout: examples/CMakeFiles/aout.dir/rule
 
 # fast build rule for target.
 aout/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/aout.dir/build.make examples/CMakeFiles/aout.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/aout.dir/build.make examples/CMakeFiles/aout.dir/build
 .PHONY : aout/fast
 
 # Convenience name for target.
 examples/CMakeFiles/calculator.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/calculator.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/calculator.dir/rule
 .PHONY : examples/CMakeFiles/calculator.dir/rule
 
 # Convenience name for target.
@@ -188,12 +188,12 @@ calculator: examples/CMakeFiles/calculator.dir/rule
 
 # fast build rule for target.
 calculator/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/calculator.dir/build.make examples/CMakeFiles/calculator.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/calculator.dir/build.make examples/CMakeFiles/calculator.dir/build
 .PHONY : calculator/fast
 
 # Convenience name for target.
 examples/CMakeFiles/calculator_behavior.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/calculator_behavior.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/calculator_behavior.dir/rule
 .PHONY : examples/CMakeFiles/calculator_behavior.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ calculator_behavior: examples/CMakeFiles/calculator_behavior.dir/rule
 
 # fast build rule for target.
 calculator_behavior/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/calculator_behavior.dir/build.make examples/CMakeFiles/calculator_behavior.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/calculator_behavior.dir/build.make examples/CMakeFiles/calculator_behavior.dir/build
 .PHONY : calculator_behavior/fast
 
 # Convenience name for target.
 examples/CMakeFiles/cell.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/cell.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/cell.dir/rule
 .PHONY : examples/CMakeFiles/cell.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ cell: examples/CMakeFiles/cell.dir/rule
 
 # fast build rule for target.
 cell/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/cell.dir/build.make examples/CMakeFiles/cell.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/cell.dir/build.make examples/CMakeFiles/cell.dir/build
 .PHONY : cell/fast
 
 # Convenience name for target.
 examples/CMakeFiles/client.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/client.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/client.dir/rule
 .PHONY : examples/CMakeFiles/client.dir/rule
 
 # Convenience name for target.
@@ -230,12 +230,26 @@ client: examples/CMakeFiles/client.dir/rule
 
 # fast build rule for target.
 client/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/client.dir/build.make examples/CMakeFiles/client.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/client.dir/build.make examples/CMakeFiles/client.dir/build
 .PHONY : client/fast
 
 # Convenience name for target.
+examples/CMakeFiles/curl_fuse.dir/rule:
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/curl_fuse.dir/rule
+.PHONY : examples/CMakeFiles/curl_fuse.dir/rule
+
+# Convenience name for target.
+curl_fuse: examples/CMakeFiles/curl_fuse.dir/rule
+.PHONY : curl_fuse
+
+# fast build rule for target.
+curl_fuse/fast:
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/curl_fuse.dir/build.make examples/CMakeFiles/curl_fuse.dir/build
+.PHONY : curl_fuse/fast
+
+# Convenience name for target.
 examples/CMakeFiles/custom_types_1.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/custom_types_1.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/custom_types_1.dir/rule
 .PHONY : examples/CMakeFiles/custom_types_1.dir/rule
 
 # Convenience name for target.
@@ -244,12 +258,12 @@ custom_types_1: examples/CMakeFiles/custom_types_1.dir/rule
 
 # fast build rule for target.
 custom_types_1/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_1.dir/build.make examples/CMakeFiles/custom_types_1.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_1.dir/build.make examples/CMakeFiles/custom_types_1.dir/build
 .PHONY : custom_types_1/fast
 
 # Convenience name for target.
 examples/CMakeFiles/custom_types_2.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/custom_types_2.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/custom_types_2.dir/rule
 .PHONY : examples/CMakeFiles/custom_types_2.dir/rule
 
 # Convenience name for target.
@@ -258,12 +272,12 @@ custom_types_2: examples/CMakeFiles/custom_types_2.dir/rule
 
 # fast build rule for target.
 custom_types_2/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_2.dir/build.make examples/CMakeFiles/custom_types_2.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_2.dir/build.make examples/CMakeFiles/custom_types_2.dir/build
 .PHONY : custom_types_2/fast
 
 # Convenience name for target.
 examples/CMakeFiles/custom_types_3.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/custom_types_3.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/custom_types_3.dir/rule
 .PHONY : examples/CMakeFiles/custom_types_3.dir/rule
 
 # Convenience name for target.
@@ -272,12 +286,12 @@ custom_types_3: examples/CMakeFiles/custom_types_3.dir/rule
 
 # fast build rule for target.
 custom_types_3/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_3.dir/build.make examples/CMakeFiles/custom_types_3.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_3.dir/build.make examples/CMakeFiles/custom_types_3.dir/build
 .PHONY : custom_types_3/fast
 
 # Convenience name for target.
 examples/CMakeFiles/dancing_kirby.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/dancing_kirby.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/dancing_kirby.dir/rule
 .PHONY : examples/CMakeFiles/dancing_kirby.dir/rule
 
 # Convenience name for target.
@@ -286,12 +300,12 @@ dancing_kirby: examples/CMakeFiles/dancing_kirby.dir/rule
 
 # fast build rule for target.
 dancing_kirby/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/dancing_kirby.dir/build.make examples/CMakeFiles/dancing_kirby.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/dancing_kirby.dir/build.make examples/CMakeFiles/dancing_kirby.dir/build
 .PHONY : dancing_kirby/fast
 
 # Convenience name for target.
 examples/CMakeFiles/delegating.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/delegating.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/delegating.dir/rule
 .PHONY : examples/CMakeFiles/delegating.dir/rule
 
 # Convenience name for target.
@@ -300,12 +314,12 @@ delegating: examples/CMakeFiles/delegating.dir/rule
 
 # fast build rule for target.
 delegating/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/delegating.dir/build.make examples/CMakeFiles/delegating.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/delegating.dir/build.make examples/CMakeFiles/delegating.dir/build
 .PHONY : delegating/fast
 
 # Convenience name for target.
 examples/CMakeFiles/dictionary_behavior.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/dictionary_behavior.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/dictionary_behavior.dir/rule
 .PHONY : examples/CMakeFiles/dictionary_behavior.dir/rule
 
 # Convenience name for target.
@@ -314,12 +328,12 @@ dictionary_behavior: examples/CMakeFiles/dictionary_behavior.dir/rule
 
 # fast build rule for target.
 dictionary_behavior/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/dictionary_behavior.dir/build.make examples/CMakeFiles/dictionary_behavior.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/dictionary_behavior.dir/build.make examples/CMakeFiles/dictionary_behavior.dir/build
 .PHONY : dictionary_behavior/fast
 
 # Convenience name for target.
 examples/CMakeFiles/dining_philosophers.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/dining_philosophers.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/dining_philosophers.dir/rule
 .PHONY : examples/CMakeFiles/dining_philosophers.dir/rule
 
 # Convenience name for target.
@@ -328,12 +342,12 @@ dining_philosophers: examples/CMakeFiles/dining_philosophers.dir/rule
 
 # fast build rule for target.
 dining_philosophers/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/dining_philosophers.dir/build.make examples/CMakeFiles/dining_philosophers.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/dining_philosophers.dir/build.make examples/CMakeFiles/dining_philosophers.dir/build
 .PHONY : dining_philosophers/fast
 
 # Convenience name for target.
 examples/CMakeFiles/distributed_calculator.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/distributed_calculator.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/distributed_calculator.dir/rule
 .PHONY : examples/CMakeFiles/distributed_calculator.dir/rule
 
 # Convenience name for target.
@@ -342,12 +356,12 @@ distributed_calculator: examples/CMakeFiles/distributed_calculator.dir/rule
 
 # fast build rule for target.
 distributed_calculator/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/distributed_calculator.dir/build.make examples/CMakeFiles/distributed_calculator.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/distributed_calculator.dir/build.make examples/CMakeFiles/distributed_calculator.dir/build
 .PHONY : distributed_calculator/fast
 
 # Convenience name for target.
 examples/CMakeFiles/divider.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/divider.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/divider.dir/rule
 .PHONY : examples/CMakeFiles/divider.dir/rule
 
 # Convenience name for target.
@@ -356,12 +370,12 @@ divider: examples/CMakeFiles/divider.dir/rule
 
 # fast build rule for target.
 divider/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/divider.dir/build.make examples/CMakeFiles/divider.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/divider.dir/build.make examples/CMakeFiles/divider.dir/build
 .PHONY : divider/fast
 
 # Convenience name for target.
 examples/CMakeFiles/fixed_stack.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/fixed_stack.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/fixed_stack.dir/rule
 .PHONY : examples/CMakeFiles/fixed_stack.dir/rule
 
 # Convenience name for target.
@@ -370,12 +384,12 @@ fixed_stack: examples/CMakeFiles/fixed_stack.dir/rule
 
 # fast build rule for target.
 fixed_stack/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/fixed_stack.dir/build.make examples/CMakeFiles/fixed_stack.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/fixed_stack.dir/build.make examples/CMakeFiles/fixed_stack.dir/build
 .PHONY : fixed_stack/fast
 
 # Convenience name for target.
 examples/CMakeFiles/group_chat.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/group_chat.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/group_chat.dir/rule
 .PHONY : examples/CMakeFiles/group_chat.dir/rule
 
 # Convenience name for target.
@@ -384,12 +398,12 @@ group_chat: examples/CMakeFiles/group_chat.dir/rule
 
 # fast build rule for target.
 group_chat/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/group_chat.dir/build.make examples/CMakeFiles/group_chat.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/group_chat.dir/build.make examples/CMakeFiles/group_chat.dir/build
 .PHONY : group_chat/fast
 
 # Convenience name for target.
 examples/CMakeFiles/group_server.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/group_server.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/group_server.dir/rule
 .PHONY : examples/CMakeFiles/group_server.dir/rule
 
 # Convenience name for target.
@@ -398,12 +412,12 @@ group_server: examples/CMakeFiles/group_server.dir/rule
 
 # fast build rule for target.
 group_server/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/group_server.dir/build.make examples/CMakeFiles/group_server.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/group_server.dir/build.make examples/CMakeFiles/group_server.dir/build
 .PHONY : group_server/fast
 
 # Convenience name for target.
 examples/CMakeFiles/hello_world1.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/hello_world1.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/hello_world1.dir/rule
 .PHONY : examples/CMakeFiles/hello_world1.dir/rule
 
 # Convenience name for target.
@@ -412,12 +426,12 @@ hello_world1: examples/CMakeFiles/hello_world1.dir/rule
 
 # fast build rule for target.
 hello_world1/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/hello_world1.dir/build.make examples/CMakeFiles/hello_world1.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/hello_world1.dir/build.make examples/CMakeFiles/hello_world1.dir/build
 .PHONY : hello_world1/fast
 
 # Convenience name for target.
 examples/CMakeFiles/master.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/master.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/master.dir/rule
 .PHONY : examples/CMakeFiles/master.dir/rule
 
 # Convenience name for target.
@@ -426,12 +440,12 @@ master: examples/CMakeFiles/master.dir/rule
 
 # fast build rule for target.
 master/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/master.dir/build.make examples/CMakeFiles/master.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/master.dir/build.make examples/CMakeFiles/master.dir/build
 .PHONY : master/fast
 
 # Convenience name for target.
 examples/CMakeFiles/prioritizing.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/prioritizing.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/prioritizing.dir/rule
 .PHONY : examples/CMakeFiles/prioritizing.dir/rule
 
 # Convenience name for target.
@@ -440,12 +454,12 @@ prioritizing: examples/CMakeFiles/prioritizing.dir/rule
 
 # fast build rule for target.
 prioritizing/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/prioritizing.dir/build.make examples/CMakeFiles/prioritizing.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/prioritizing.dir/build.make examples/CMakeFiles/prioritizing.dir/build
 .PHONY : prioritizing/fast
 
 # Convenience name for target.
 examples/CMakeFiles/promises.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/promises.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/promises.dir/rule
 .PHONY : examples/CMakeFiles/promises.dir/rule
 
 # Convenience name for target.
@@ -454,12 +468,12 @@ promises: examples/CMakeFiles/promises.dir/rule
 
 # fast build rule for target.
 promises/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/promises.dir/build.make examples/CMakeFiles/promises.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/promises.dir/build.make examples/CMakeFiles/promises.dir/build
 .PHONY : promises/fast
 
 # Convenience name for target.
 examples/CMakeFiles/request.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/request.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/request.dir/rule
 .PHONY : examples/CMakeFiles/request.dir/rule
 
 # Convenience name for target.
@@ -468,12 +482,12 @@ request: examples/CMakeFiles/request.dir/rule
 
 # fast build rule for target.
 request/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/request.dir/build.make examples/CMakeFiles/request.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/request.dir/build.make examples/CMakeFiles/request.dir/build
 .PHONY : request/fast
 
 # Convenience name for target.
 examples/CMakeFiles/simple_broker.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/simple_broker.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/simple_broker.dir/rule
 .PHONY : examples/CMakeFiles/simple_broker.dir/rule
 
 # Convenience name for target.
@@ -482,12 +496,12 @@ simple_broker: examples/CMakeFiles/simple_broker.dir/rule
 
 # fast build rule for target.
 simple_broker/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/simple_broker.dir/build.make examples/CMakeFiles/simple_broker.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/simple_broker.dir/build.make examples/CMakeFiles/simple_broker.dir/build
 .PHONY : simple_broker/fast
 
 # Convenience name for target.
 examples/CMakeFiles/simple_http_broker.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/simple_http_broker.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/simple_http_broker.dir/rule
 .PHONY : examples/CMakeFiles/simple_http_broker.dir/rule
 
 # Convenience name for target.
@@ -496,12 +510,12 @@ simple_http_broker: examples/CMakeFiles/simple_http_broker.dir/rule
 
 # fast build rule for target.
 simple_http_broker/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/simple_http_broker.dir/build.make examples/CMakeFiles/simple_http_broker.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/simple_http_broker.dir/build.make examples/CMakeFiles/simple_http_broker.dir/build
 .PHONY : simple_http_broker/fast
 
 # Convenience name for target.
 examples/CMakeFiles/skip_messages.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/skip_messages.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/skip_messages.dir/rule
 .PHONY : examples/CMakeFiles/skip_messages.dir/rule
 
 # Convenience name for target.
@@ -510,12 +524,12 @@ skip_messages: examples/CMakeFiles/skip_messages.dir/rule
 
 # fast build rule for target.
 skip_messages/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/skip_messages.dir/build.make examples/CMakeFiles/skip_messages.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/skip_messages.dir/build.make examples/CMakeFiles/skip_messages.dir/build
 .PHONY : skip_messages/fast
 
 # Convenience name for target.
 examples/CMakeFiles/try.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/try.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/try.dir/rule
 .PHONY : examples/CMakeFiles/try.dir/rule
 
 # Convenience name for target.
@@ -524,12 +538,12 @@ try: examples/CMakeFiles/try.dir/rule
 
 # fast build rule for target.
 try/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/try.dir/build.make examples/CMakeFiles/try.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/try.dir/build.make examples/CMakeFiles/try.dir/build
 .PHONY : try/fast
 
 # Convenience name for target.
 examples/CMakeFiles/typed_calculator.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/typed_calculator.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/typed_calculator.dir/rule
 .PHONY : examples/CMakeFiles/typed_calculator.dir/rule
 
 # Convenience name for target.
@@ -538,7 +552,7 @@ typed_calculator: examples/CMakeFiles/typed_calculator.dir/rule
 
 # fast build rule for target.
 typed_calculator/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/typed_calculator.dir/build.make examples/CMakeFiles/typed_calculator.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/typed_calculator.dir/build.make examples/CMakeFiles/typed_calculator.dir/build
 .PHONY : typed_calculator/fast
 
 aout.o: aout.cpp.o
@@ -546,7 +560,7 @@ aout.o: aout.cpp.o
 
 # target to build an object file
 aout.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/aout.dir/build.make examples/CMakeFiles/aout.dir/aout.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/aout.dir/build.make examples/CMakeFiles/aout.dir/aout.cpp.o
 .PHONY : aout.cpp.o
 
 aout.i: aout.cpp.i
@@ -554,7 +568,7 @@ aout.i: aout.cpp.i
 
 # target to preprocess a source file
 aout.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/aout.dir/build.make examples/CMakeFiles/aout.dir/aout.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/aout.dir/build.make examples/CMakeFiles/aout.dir/aout.cpp.i
 .PHONY : aout.cpp.i
 
 aout.s: aout.cpp.s
@@ -562,7 +576,7 @@ aout.s: aout.cpp.s
 
 # target to generate assembly for a file
 aout.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/aout.dir/build.make examples/CMakeFiles/aout.dir/aout.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/aout.dir/build.make examples/CMakeFiles/aout.dir/aout.cpp.s
 .PHONY : aout.cpp.s
 
 broker/simple_broker.o: broker/simple_broker.cpp.o
@@ -570,7 +584,7 @@ broker/simple_broker.o: broker/simple_broker.cpp.o
 
 # target to build an object file
 broker/simple_broker.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/simple_broker.dir/build.make examples/CMakeFiles/simple_broker.dir/broker/simple_broker.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/simple_broker.dir/build.make examples/CMakeFiles/simple_broker.dir/broker/simple_broker.cpp.o
 .PHONY : broker/simple_broker.cpp.o
 
 broker/simple_broker.i: broker/simple_broker.cpp.i
@@ -578,7 +592,7 @@ broker/simple_broker.i: broker/simple_broker.cpp.i
 
 # target to preprocess a source file
 broker/simple_broker.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/simple_broker.dir/build.make examples/CMakeFiles/simple_broker.dir/broker/simple_broker.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/simple_broker.dir/build.make examples/CMakeFiles/simple_broker.dir/broker/simple_broker.cpp.i
 .PHONY : broker/simple_broker.cpp.i
 
 broker/simple_broker.s: broker/simple_broker.cpp.s
@@ -586,7 +600,7 @@ broker/simple_broker.s: broker/simple_broker.cpp.s
 
 # target to generate assembly for a file
 broker/simple_broker.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/simple_broker.dir/build.make examples/CMakeFiles/simple_broker.dir/broker/simple_broker.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/simple_broker.dir/build.make examples/CMakeFiles/simple_broker.dir/broker/simple_broker.cpp.s
 .PHONY : broker/simple_broker.cpp.s
 
 broker/simple_http_broker.o: broker/simple_http_broker.cpp.o
@@ -594,7 +608,7 @@ broker/simple_http_broker.o: broker/simple_http_broker.cpp.o
 
 # target to build an object file
 broker/simple_http_broker.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/simple_http_broker.dir/build.make examples/CMakeFiles/simple_http_broker.dir/broker/simple_http_broker.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/simple_http_broker.dir/build.make examples/CMakeFiles/simple_http_broker.dir/broker/simple_http_broker.cpp.o
 .PHONY : broker/simple_http_broker.cpp.o
 
 broker/simple_http_broker.i: broker/simple_http_broker.cpp.i
@@ -602,7 +616,7 @@ broker/simple_http_broker.i: broker/simple_http_broker.cpp.i
 
 # target to preprocess a source file
 broker/simple_http_broker.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/simple_http_broker.dir/build.make examples/CMakeFiles/simple_http_broker.dir/broker/simple_http_broker.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/simple_http_broker.dir/build.make examples/CMakeFiles/simple_http_broker.dir/broker/simple_http_broker.cpp.i
 .PHONY : broker/simple_http_broker.cpp.i
 
 broker/simple_http_broker.s: broker/simple_http_broker.cpp.s
@@ -610,7 +624,7 @@ broker/simple_http_broker.s: broker/simple_http_broker.cpp.s
 
 # target to generate assembly for a file
 broker/simple_http_broker.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/simple_http_broker.dir/build.make examples/CMakeFiles/simple_http_broker.dir/broker/simple_http_broker.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/simple_http_broker.dir/build.make examples/CMakeFiles/simple_http_broker.dir/broker/simple_http_broker.cpp.s
 .PHONY : broker/simple_http_broker.cpp.s
 
 client.o: client.cpp.o
@@ -618,7 +632,7 @@ client.o: client.cpp.o
 
 # target to build an object file
 client.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/client.dir/build.make examples/CMakeFiles/client.dir/client.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/client.dir/build.make examples/CMakeFiles/client.dir/client.cpp.o
 .PHONY : client.cpp.o
 
 client.i: client.cpp.i
@@ -626,7 +640,7 @@ client.i: client.cpp.i
 
 # target to preprocess a source file
 client.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/client.dir/build.make examples/CMakeFiles/client.dir/client.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/client.dir/build.make examples/CMakeFiles/client.dir/client.cpp.i
 .PHONY : client.cpp.i
 
 client.s: client.cpp.s
@@ -634,7 +648,7 @@ client.s: client.cpp.s
 
 # target to generate assembly for a file
 client.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/client.dir/build.make examples/CMakeFiles/client.dir/client.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/client.dir/build.make examples/CMakeFiles/client.dir/client.cpp.s
 .PHONY : client.cpp.s
 
 composition/calculator_behavior.o: composition/calculator_behavior.cpp.o
@@ -642,7 +656,7 @@ composition/calculator_behavior.o: composition/calculator_behavior.cpp.o
 
 # target to build an object file
 composition/calculator_behavior.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/calculator_behavior.dir/build.make examples/CMakeFiles/calculator_behavior.dir/composition/calculator_behavior.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/calculator_behavior.dir/build.make examples/CMakeFiles/calculator_behavior.dir/composition/calculator_behavior.cpp.o
 .PHONY : composition/calculator_behavior.cpp.o
 
 composition/calculator_behavior.i: composition/calculator_behavior.cpp.i
@@ -650,7 +664,7 @@ composition/calculator_behavior.i: composition/calculator_behavior.cpp.i
 
 # target to preprocess a source file
 composition/calculator_behavior.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/calculator_behavior.dir/build.make examples/CMakeFiles/calculator_behavior.dir/composition/calculator_behavior.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/calculator_behavior.dir/build.make examples/CMakeFiles/calculator_behavior.dir/composition/calculator_behavior.cpp.i
 .PHONY : composition/calculator_behavior.cpp.i
 
 composition/calculator_behavior.s: composition/calculator_behavior.cpp.s
@@ -658,7 +672,7 @@ composition/calculator_behavior.s: composition/calculator_behavior.cpp.s
 
 # target to generate assembly for a file
 composition/calculator_behavior.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/calculator_behavior.dir/build.make examples/CMakeFiles/calculator_behavior.dir/composition/calculator_behavior.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/calculator_behavior.dir/build.make examples/CMakeFiles/calculator_behavior.dir/composition/calculator_behavior.cpp.s
 .PHONY : composition/calculator_behavior.cpp.s
 
 composition/dictionary_behavior.o: composition/dictionary_behavior.cpp.o
@@ -666,7 +680,7 @@ composition/dictionary_behavior.o: composition/dictionary_behavior.cpp.o
 
 # target to build an object file
 composition/dictionary_behavior.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/dictionary_behavior.dir/build.make examples/CMakeFiles/dictionary_behavior.dir/composition/dictionary_behavior.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/dictionary_behavior.dir/build.make examples/CMakeFiles/dictionary_behavior.dir/composition/dictionary_behavior.cpp.o
 .PHONY : composition/dictionary_behavior.cpp.o
 
 composition/dictionary_behavior.i: composition/dictionary_behavior.cpp.i
@@ -674,7 +688,7 @@ composition/dictionary_behavior.i: composition/dictionary_behavior.cpp.i
 
 # target to preprocess a source file
 composition/dictionary_behavior.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/dictionary_behavior.dir/build.make examples/CMakeFiles/dictionary_behavior.dir/composition/dictionary_behavior.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/dictionary_behavior.dir/build.make examples/CMakeFiles/dictionary_behavior.dir/composition/dictionary_behavior.cpp.i
 .PHONY : composition/dictionary_behavior.cpp.i
 
 composition/dictionary_behavior.s: composition/dictionary_behavior.cpp.s
@@ -682,15 +696,39 @@ composition/dictionary_behavior.s: composition/dictionary_behavior.cpp.s
 
 # target to generate assembly for a file
 composition/dictionary_behavior.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/dictionary_behavior.dir/build.make examples/CMakeFiles/dictionary_behavior.dir/composition/dictionary_behavior.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/dictionary_behavior.dir/build.make examples/CMakeFiles/dictionary_behavior.dir/composition/dictionary_behavior.cpp.s
 .PHONY : composition/dictionary_behavior.cpp.s
+
+curl/curl_fuse.o: curl/curl_fuse.cpp.o
+.PHONY : curl/curl_fuse.o
+
+# target to build an object file
+curl/curl_fuse.cpp.o:
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/curl_fuse.dir/build.make examples/CMakeFiles/curl_fuse.dir/curl/curl_fuse.cpp.o
+.PHONY : curl/curl_fuse.cpp.o
+
+curl/curl_fuse.i: curl/curl_fuse.cpp.i
+.PHONY : curl/curl_fuse.i
+
+# target to preprocess a source file
+curl/curl_fuse.cpp.i:
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/curl_fuse.dir/build.make examples/CMakeFiles/curl_fuse.dir/curl/curl_fuse.cpp.i
+.PHONY : curl/curl_fuse.cpp.i
+
+curl/curl_fuse.s: curl/curl_fuse.cpp.s
+.PHONY : curl/curl_fuse.s
+
+# target to generate assembly for a file
+curl/curl_fuse.cpp.s:
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/curl_fuse.dir/build.make examples/CMakeFiles/curl_fuse.dir/curl/curl_fuse.cpp.s
+.PHONY : curl/curl_fuse.cpp.s
 
 custom_type/custom_types_1.o: custom_type/custom_types_1.cpp.o
 .PHONY : custom_type/custom_types_1.o
 
 # target to build an object file
 custom_type/custom_types_1.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_1.dir/build.make examples/CMakeFiles/custom_types_1.dir/custom_type/custom_types_1.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_1.dir/build.make examples/CMakeFiles/custom_types_1.dir/custom_type/custom_types_1.cpp.o
 .PHONY : custom_type/custom_types_1.cpp.o
 
 custom_type/custom_types_1.i: custom_type/custom_types_1.cpp.i
@@ -698,7 +736,7 @@ custom_type/custom_types_1.i: custom_type/custom_types_1.cpp.i
 
 # target to preprocess a source file
 custom_type/custom_types_1.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_1.dir/build.make examples/CMakeFiles/custom_types_1.dir/custom_type/custom_types_1.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_1.dir/build.make examples/CMakeFiles/custom_types_1.dir/custom_type/custom_types_1.cpp.i
 .PHONY : custom_type/custom_types_1.cpp.i
 
 custom_type/custom_types_1.s: custom_type/custom_types_1.cpp.s
@@ -706,7 +744,7 @@ custom_type/custom_types_1.s: custom_type/custom_types_1.cpp.s
 
 # target to generate assembly for a file
 custom_type/custom_types_1.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_1.dir/build.make examples/CMakeFiles/custom_types_1.dir/custom_type/custom_types_1.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_1.dir/build.make examples/CMakeFiles/custom_types_1.dir/custom_type/custom_types_1.cpp.s
 .PHONY : custom_type/custom_types_1.cpp.s
 
 custom_type/custom_types_2.o: custom_type/custom_types_2.cpp.o
@@ -714,7 +752,7 @@ custom_type/custom_types_2.o: custom_type/custom_types_2.cpp.o
 
 # target to build an object file
 custom_type/custom_types_2.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_2.dir/build.make examples/CMakeFiles/custom_types_2.dir/custom_type/custom_types_2.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_2.dir/build.make examples/CMakeFiles/custom_types_2.dir/custom_type/custom_types_2.cpp.o
 .PHONY : custom_type/custom_types_2.cpp.o
 
 custom_type/custom_types_2.i: custom_type/custom_types_2.cpp.i
@@ -722,7 +760,7 @@ custom_type/custom_types_2.i: custom_type/custom_types_2.cpp.i
 
 # target to preprocess a source file
 custom_type/custom_types_2.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_2.dir/build.make examples/CMakeFiles/custom_types_2.dir/custom_type/custom_types_2.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_2.dir/build.make examples/CMakeFiles/custom_types_2.dir/custom_type/custom_types_2.cpp.i
 .PHONY : custom_type/custom_types_2.cpp.i
 
 custom_type/custom_types_2.s: custom_type/custom_types_2.cpp.s
@@ -730,7 +768,7 @@ custom_type/custom_types_2.s: custom_type/custom_types_2.cpp.s
 
 # target to generate assembly for a file
 custom_type/custom_types_2.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_2.dir/build.make examples/CMakeFiles/custom_types_2.dir/custom_type/custom_types_2.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_2.dir/build.make examples/CMakeFiles/custom_types_2.dir/custom_type/custom_types_2.cpp.s
 .PHONY : custom_type/custom_types_2.cpp.s
 
 custom_type/custom_types_3.o: custom_type/custom_types_3.cpp.o
@@ -738,7 +776,7 @@ custom_type/custom_types_3.o: custom_type/custom_types_3.cpp.o
 
 # target to build an object file
 custom_type/custom_types_3.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_3.dir/build.make examples/CMakeFiles/custom_types_3.dir/custom_type/custom_types_3.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_3.dir/build.make examples/CMakeFiles/custom_types_3.dir/custom_type/custom_types_3.cpp.o
 .PHONY : custom_type/custom_types_3.cpp.o
 
 custom_type/custom_types_3.i: custom_type/custom_types_3.cpp.i
@@ -746,7 +784,7 @@ custom_type/custom_types_3.i: custom_type/custom_types_3.cpp.i
 
 # target to preprocess a source file
 custom_type/custom_types_3.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_3.dir/build.make examples/CMakeFiles/custom_types_3.dir/custom_type/custom_types_3.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_3.dir/build.make examples/CMakeFiles/custom_types_3.dir/custom_type/custom_types_3.cpp.i
 .PHONY : custom_type/custom_types_3.cpp.i
 
 custom_type/custom_types_3.s: custom_type/custom_types_3.cpp.s
@@ -754,7 +792,7 @@ custom_type/custom_types_3.s: custom_type/custom_types_3.cpp.s
 
 # target to generate assembly for a file
 custom_type/custom_types_3.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_3.dir/build.make examples/CMakeFiles/custom_types_3.dir/custom_type/custom_types_3.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/custom_types_3.dir/build.make examples/CMakeFiles/custom_types_3.dir/custom_type/custom_types_3.cpp.s
 .PHONY : custom_type/custom_types_3.cpp.s
 
 dynamic_behavior/dining_philosophers.o: dynamic_behavior/dining_philosophers.cpp.o
@@ -762,7 +800,7 @@ dynamic_behavior/dining_philosophers.o: dynamic_behavior/dining_philosophers.cpp
 
 # target to build an object file
 dynamic_behavior/dining_philosophers.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/dining_philosophers.dir/build.make examples/CMakeFiles/dining_philosophers.dir/dynamic_behavior/dining_philosophers.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/dining_philosophers.dir/build.make examples/CMakeFiles/dining_philosophers.dir/dynamic_behavior/dining_philosophers.cpp.o
 .PHONY : dynamic_behavior/dining_philosophers.cpp.o
 
 dynamic_behavior/dining_philosophers.i: dynamic_behavior/dining_philosophers.cpp.i
@@ -770,7 +808,7 @@ dynamic_behavior/dining_philosophers.i: dynamic_behavior/dining_philosophers.cpp
 
 # target to preprocess a source file
 dynamic_behavior/dining_philosophers.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/dining_philosophers.dir/build.make examples/CMakeFiles/dining_philosophers.dir/dynamic_behavior/dining_philosophers.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/dining_philosophers.dir/build.make examples/CMakeFiles/dining_philosophers.dir/dynamic_behavior/dining_philosophers.cpp.i
 .PHONY : dynamic_behavior/dining_philosophers.cpp.i
 
 dynamic_behavior/dining_philosophers.s: dynamic_behavior/dining_philosophers.cpp.s
@@ -778,7 +816,7 @@ dynamic_behavior/dining_philosophers.s: dynamic_behavior/dining_philosophers.cpp
 
 # target to generate assembly for a file
 dynamic_behavior/dining_philosophers.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/dining_philosophers.dir/build.make examples/CMakeFiles/dining_philosophers.dir/dynamic_behavior/dining_philosophers.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/dining_philosophers.dir/build.make examples/CMakeFiles/dining_philosophers.dir/dynamic_behavior/dining_philosophers.cpp.s
 .PHONY : dynamic_behavior/dining_philosophers.cpp.s
 
 dynamic_behavior/skip_messages.o: dynamic_behavior/skip_messages.cpp.o
@@ -786,7 +824,7 @@ dynamic_behavior/skip_messages.o: dynamic_behavior/skip_messages.cpp.o
 
 # target to build an object file
 dynamic_behavior/skip_messages.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/skip_messages.dir/build.make examples/CMakeFiles/skip_messages.dir/dynamic_behavior/skip_messages.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/skip_messages.dir/build.make examples/CMakeFiles/skip_messages.dir/dynamic_behavior/skip_messages.cpp.o
 .PHONY : dynamic_behavior/skip_messages.cpp.o
 
 dynamic_behavior/skip_messages.i: dynamic_behavior/skip_messages.cpp.i
@@ -794,7 +832,7 @@ dynamic_behavior/skip_messages.i: dynamic_behavior/skip_messages.cpp.i
 
 # target to preprocess a source file
 dynamic_behavior/skip_messages.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/skip_messages.dir/build.make examples/CMakeFiles/skip_messages.dir/dynamic_behavior/skip_messages.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/skip_messages.dir/build.make examples/CMakeFiles/skip_messages.dir/dynamic_behavior/skip_messages.cpp.i
 .PHONY : dynamic_behavior/skip_messages.cpp.i
 
 dynamic_behavior/skip_messages.s: dynamic_behavior/skip_messages.cpp.s
@@ -802,7 +840,7 @@ dynamic_behavior/skip_messages.s: dynamic_behavior/skip_messages.cpp.s
 
 # target to generate assembly for a file
 dynamic_behavior/skip_messages.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/skip_messages.dir/build.make examples/CMakeFiles/skip_messages.dir/dynamic_behavior/skip_messages.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/skip_messages.dir/build.make examples/CMakeFiles/skip_messages.dir/dynamic_behavior/skip_messages.cpp.s
 .PHONY : dynamic_behavior/skip_messages.cpp.s
 
 hello_world1.o: hello_world1.cpp.o
@@ -810,7 +848,7 @@ hello_world1.o: hello_world1.cpp.o
 
 # target to build an object file
 hello_world1.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/hello_world1.dir/build.make examples/CMakeFiles/hello_world1.dir/hello_world1.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/hello_world1.dir/build.make examples/CMakeFiles/hello_world1.dir/hello_world1.cpp.o
 .PHONY : hello_world1.cpp.o
 
 hello_world1.i: hello_world1.cpp.i
@@ -818,7 +856,7 @@ hello_world1.i: hello_world1.cpp.i
 
 # target to preprocess a source file
 hello_world1.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/hello_world1.dir/build.make examples/CMakeFiles/hello_world1.dir/hello_world1.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/hello_world1.dir/build.make examples/CMakeFiles/hello_world1.dir/hello_world1.cpp.i
 .PHONY : hello_world1.cpp.i
 
 hello_world1.s: hello_world1.cpp.s
@@ -826,7 +864,7 @@ hello_world1.s: hello_world1.cpp.s
 
 # target to generate assembly for a file
 hello_world1.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/hello_world1.dir/build.make examples/CMakeFiles/hello_world1.dir/hello_world1.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/hello_world1.dir/build.make examples/CMakeFiles/hello_world1.dir/hello_world1.cpp.s
 .PHONY : hello_world1.cpp.s
 
 master.o: master.cpp.o
@@ -834,7 +872,7 @@ master.o: master.cpp.o
 
 # target to build an object file
 master.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/master.dir/build.make examples/CMakeFiles/master.dir/master.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/master.dir/build.make examples/CMakeFiles/master.dir/master.cpp.o
 .PHONY : master.cpp.o
 
 master.i: master.cpp.i
@@ -842,7 +880,7 @@ master.i: master.cpp.i
 
 # target to preprocess a source file
 master.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/master.dir/build.make examples/CMakeFiles/master.dir/master.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/master.dir/build.make examples/CMakeFiles/master.dir/master.cpp.i
 .PHONY : master.cpp.i
 
 master.s: master.cpp.s
@@ -850,7 +888,7 @@ master.s: master.cpp.s
 
 # target to generate assembly for a file
 master.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/master.dir/build.make examples/CMakeFiles/master.dir/master.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/master.dir/build.make examples/CMakeFiles/master.dir/master.cpp.s
 .PHONY : master.cpp.s
 
 message_passing/calculator.o: message_passing/calculator.cpp.o
@@ -858,7 +896,7 @@ message_passing/calculator.o: message_passing/calculator.cpp.o
 
 # target to build an object file
 message_passing/calculator.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/calculator.dir/build.make examples/CMakeFiles/calculator.dir/message_passing/calculator.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/calculator.dir/build.make examples/CMakeFiles/calculator.dir/message_passing/calculator.cpp.o
 .PHONY : message_passing/calculator.cpp.o
 
 message_passing/calculator.i: message_passing/calculator.cpp.i
@@ -866,7 +904,7 @@ message_passing/calculator.i: message_passing/calculator.cpp.i
 
 # target to preprocess a source file
 message_passing/calculator.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/calculator.dir/build.make examples/CMakeFiles/calculator.dir/message_passing/calculator.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/calculator.dir/build.make examples/CMakeFiles/calculator.dir/message_passing/calculator.cpp.i
 .PHONY : message_passing/calculator.cpp.i
 
 message_passing/calculator.s: message_passing/calculator.cpp.s
@@ -874,7 +912,7 @@ message_passing/calculator.s: message_passing/calculator.cpp.s
 
 # target to generate assembly for a file
 message_passing/calculator.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/calculator.dir/build.make examples/CMakeFiles/calculator.dir/message_passing/calculator.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/calculator.dir/build.make examples/CMakeFiles/calculator.dir/message_passing/calculator.cpp.s
 .PHONY : message_passing/calculator.cpp.s
 
 message_passing/cell.o: message_passing/cell.cpp.o
@@ -882,7 +920,7 @@ message_passing/cell.o: message_passing/cell.cpp.o
 
 # target to build an object file
 message_passing/cell.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/cell.dir/build.make examples/CMakeFiles/cell.dir/message_passing/cell.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/cell.dir/build.make examples/CMakeFiles/cell.dir/message_passing/cell.cpp.o
 .PHONY : message_passing/cell.cpp.o
 
 message_passing/cell.i: message_passing/cell.cpp.i
@@ -890,7 +928,7 @@ message_passing/cell.i: message_passing/cell.cpp.i
 
 # target to preprocess a source file
 message_passing/cell.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/cell.dir/build.make examples/CMakeFiles/cell.dir/message_passing/cell.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/cell.dir/build.make examples/CMakeFiles/cell.dir/message_passing/cell.cpp.i
 .PHONY : message_passing/cell.cpp.i
 
 message_passing/cell.s: message_passing/cell.cpp.s
@@ -898,7 +936,7 @@ message_passing/cell.s: message_passing/cell.cpp.s
 
 # target to generate assembly for a file
 message_passing/cell.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/cell.dir/build.make examples/CMakeFiles/cell.dir/message_passing/cell.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/cell.dir/build.make examples/CMakeFiles/cell.dir/message_passing/cell.cpp.s
 .PHONY : message_passing/cell.cpp.s
 
 message_passing/dancing_kirby.o: message_passing/dancing_kirby.cpp.o
@@ -906,7 +944,7 @@ message_passing/dancing_kirby.o: message_passing/dancing_kirby.cpp.o
 
 # target to build an object file
 message_passing/dancing_kirby.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/dancing_kirby.dir/build.make examples/CMakeFiles/dancing_kirby.dir/message_passing/dancing_kirby.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/dancing_kirby.dir/build.make examples/CMakeFiles/dancing_kirby.dir/message_passing/dancing_kirby.cpp.o
 .PHONY : message_passing/dancing_kirby.cpp.o
 
 message_passing/dancing_kirby.i: message_passing/dancing_kirby.cpp.i
@@ -914,7 +952,7 @@ message_passing/dancing_kirby.i: message_passing/dancing_kirby.cpp.i
 
 # target to preprocess a source file
 message_passing/dancing_kirby.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/dancing_kirby.dir/build.make examples/CMakeFiles/dancing_kirby.dir/message_passing/dancing_kirby.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/dancing_kirby.dir/build.make examples/CMakeFiles/dancing_kirby.dir/message_passing/dancing_kirby.cpp.i
 .PHONY : message_passing/dancing_kirby.cpp.i
 
 message_passing/dancing_kirby.s: message_passing/dancing_kirby.cpp.s
@@ -922,7 +960,7 @@ message_passing/dancing_kirby.s: message_passing/dancing_kirby.cpp.s
 
 # target to generate assembly for a file
 message_passing/dancing_kirby.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/dancing_kirby.dir/build.make examples/CMakeFiles/dancing_kirby.dir/message_passing/dancing_kirby.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/dancing_kirby.dir/build.make examples/CMakeFiles/dancing_kirby.dir/message_passing/dancing_kirby.cpp.s
 .PHONY : message_passing/dancing_kirby.cpp.s
 
 message_passing/delegating.o: message_passing/delegating.cpp.o
@@ -930,7 +968,7 @@ message_passing/delegating.o: message_passing/delegating.cpp.o
 
 # target to build an object file
 message_passing/delegating.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/delegating.dir/build.make examples/CMakeFiles/delegating.dir/message_passing/delegating.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/delegating.dir/build.make examples/CMakeFiles/delegating.dir/message_passing/delegating.cpp.o
 .PHONY : message_passing/delegating.cpp.o
 
 message_passing/delegating.i: message_passing/delegating.cpp.i
@@ -938,7 +976,7 @@ message_passing/delegating.i: message_passing/delegating.cpp.i
 
 # target to preprocess a source file
 message_passing/delegating.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/delegating.dir/build.make examples/CMakeFiles/delegating.dir/message_passing/delegating.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/delegating.dir/build.make examples/CMakeFiles/delegating.dir/message_passing/delegating.cpp.i
 .PHONY : message_passing/delegating.cpp.i
 
 message_passing/delegating.s: message_passing/delegating.cpp.s
@@ -946,7 +984,7 @@ message_passing/delegating.s: message_passing/delegating.cpp.s
 
 # target to generate assembly for a file
 message_passing/delegating.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/delegating.dir/build.make examples/CMakeFiles/delegating.dir/message_passing/delegating.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/delegating.dir/build.make examples/CMakeFiles/delegating.dir/message_passing/delegating.cpp.s
 .PHONY : message_passing/delegating.cpp.s
 
 message_passing/divider.o: message_passing/divider.cpp.o
@@ -954,7 +992,7 @@ message_passing/divider.o: message_passing/divider.cpp.o
 
 # target to build an object file
 message_passing/divider.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/divider.dir/build.make examples/CMakeFiles/divider.dir/message_passing/divider.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/divider.dir/build.make examples/CMakeFiles/divider.dir/message_passing/divider.cpp.o
 .PHONY : message_passing/divider.cpp.o
 
 message_passing/divider.i: message_passing/divider.cpp.i
@@ -962,7 +1000,7 @@ message_passing/divider.i: message_passing/divider.cpp.i
 
 # target to preprocess a source file
 message_passing/divider.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/divider.dir/build.make examples/CMakeFiles/divider.dir/message_passing/divider.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/divider.dir/build.make examples/CMakeFiles/divider.dir/message_passing/divider.cpp.i
 .PHONY : message_passing/divider.cpp.i
 
 message_passing/divider.s: message_passing/divider.cpp.s
@@ -970,7 +1008,7 @@ message_passing/divider.s: message_passing/divider.cpp.s
 
 # target to generate assembly for a file
 message_passing/divider.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/divider.dir/build.make examples/CMakeFiles/divider.dir/message_passing/divider.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/divider.dir/build.make examples/CMakeFiles/divider.dir/message_passing/divider.cpp.s
 .PHONY : message_passing/divider.cpp.s
 
 message_passing/fixed_stack.o: message_passing/fixed_stack.cpp.o
@@ -978,7 +1016,7 @@ message_passing/fixed_stack.o: message_passing/fixed_stack.cpp.o
 
 # target to build an object file
 message_passing/fixed_stack.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/fixed_stack.dir/build.make examples/CMakeFiles/fixed_stack.dir/message_passing/fixed_stack.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/fixed_stack.dir/build.make examples/CMakeFiles/fixed_stack.dir/message_passing/fixed_stack.cpp.o
 .PHONY : message_passing/fixed_stack.cpp.o
 
 message_passing/fixed_stack.i: message_passing/fixed_stack.cpp.i
@@ -986,7 +1024,7 @@ message_passing/fixed_stack.i: message_passing/fixed_stack.cpp.i
 
 # target to preprocess a source file
 message_passing/fixed_stack.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/fixed_stack.dir/build.make examples/CMakeFiles/fixed_stack.dir/message_passing/fixed_stack.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/fixed_stack.dir/build.make examples/CMakeFiles/fixed_stack.dir/message_passing/fixed_stack.cpp.i
 .PHONY : message_passing/fixed_stack.cpp.i
 
 message_passing/fixed_stack.s: message_passing/fixed_stack.cpp.s
@@ -994,7 +1032,7 @@ message_passing/fixed_stack.s: message_passing/fixed_stack.cpp.s
 
 # target to generate assembly for a file
 message_passing/fixed_stack.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/fixed_stack.dir/build.make examples/CMakeFiles/fixed_stack.dir/message_passing/fixed_stack.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/fixed_stack.dir/build.make examples/CMakeFiles/fixed_stack.dir/message_passing/fixed_stack.cpp.s
 .PHONY : message_passing/fixed_stack.cpp.s
 
 message_passing/prioritizing.o: message_passing/prioritizing.cpp.o
@@ -1002,7 +1040,7 @@ message_passing/prioritizing.o: message_passing/prioritizing.cpp.o
 
 # target to build an object file
 message_passing/prioritizing.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/prioritizing.dir/build.make examples/CMakeFiles/prioritizing.dir/message_passing/prioritizing.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/prioritizing.dir/build.make examples/CMakeFiles/prioritizing.dir/message_passing/prioritizing.cpp.o
 .PHONY : message_passing/prioritizing.cpp.o
 
 message_passing/prioritizing.i: message_passing/prioritizing.cpp.i
@@ -1010,7 +1048,7 @@ message_passing/prioritizing.i: message_passing/prioritizing.cpp.i
 
 # target to preprocess a source file
 message_passing/prioritizing.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/prioritizing.dir/build.make examples/CMakeFiles/prioritizing.dir/message_passing/prioritizing.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/prioritizing.dir/build.make examples/CMakeFiles/prioritizing.dir/message_passing/prioritizing.cpp.i
 .PHONY : message_passing/prioritizing.cpp.i
 
 message_passing/prioritizing.s: message_passing/prioritizing.cpp.s
@@ -1018,7 +1056,7 @@ message_passing/prioritizing.s: message_passing/prioritizing.cpp.s
 
 # target to generate assembly for a file
 message_passing/prioritizing.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/prioritizing.dir/build.make examples/CMakeFiles/prioritizing.dir/message_passing/prioritizing.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/prioritizing.dir/build.make examples/CMakeFiles/prioritizing.dir/message_passing/prioritizing.cpp.s
 .PHONY : message_passing/prioritizing.cpp.s
 
 message_passing/promises.o: message_passing/promises.cpp.o
@@ -1026,7 +1064,7 @@ message_passing/promises.o: message_passing/promises.cpp.o
 
 # target to build an object file
 message_passing/promises.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/promises.dir/build.make examples/CMakeFiles/promises.dir/message_passing/promises.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/promises.dir/build.make examples/CMakeFiles/promises.dir/message_passing/promises.cpp.o
 .PHONY : message_passing/promises.cpp.o
 
 message_passing/promises.i: message_passing/promises.cpp.i
@@ -1034,7 +1072,7 @@ message_passing/promises.i: message_passing/promises.cpp.i
 
 # target to preprocess a source file
 message_passing/promises.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/promises.dir/build.make examples/CMakeFiles/promises.dir/message_passing/promises.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/promises.dir/build.make examples/CMakeFiles/promises.dir/message_passing/promises.cpp.i
 .PHONY : message_passing/promises.cpp.i
 
 message_passing/promises.s: message_passing/promises.cpp.s
@@ -1042,7 +1080,7 @@ message_passing/promises.s: message_passing/promises.cpp.s
 
 # target to generate assembly for a file
 message_passing/promises.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/promises.dir/build.make examples/CMakeFiles/promises.dir/message_passing/promises.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/promises.dir/build.make examples/CMakeFiles/promises.dir/message_passing/promises.cpp.s
 .PHONY : message_passing/promises.cpp.s
 
 message_passing/request.o: message_passing/request.cpp.o
@@ -1050,7 +1088,7 @@ message_passing/request.o: message_passing/request.cpp.o
 
 # target to build an object file
 message_passing/request.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/request.dir/build.make examples/CMakeFiles/request.dir/message_passing/request.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/request.dir/build.make examples/CMakeFiles/request.dir/message_passing/request.cpp.o
 .PHONY : message_passing/request.cpp.o
 
 message_passing/request.i: message_passing/request.cpp.i
@@ -1058,7 +1096,7 @@ message_passing/request.i: message_passing/request.cpp.i
 
 # target to preprocess a source file
 message_passing/request.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/request.dir/build.make examples/CMakeFiles/request.dir/message_passing/request.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/request.dir/build.make examples/CMakeFiles/request.dir/message_passing/request.cpp.i
 .PHONY : message_passing/request.cpp.i
 
 message_passing/request.s: message_passing/request.cpp.s
@@ -1066,7 +1104,7 @@ message_passing/request.s: message_passing/request.cpp.s
 
 # target to generate assembly for a file
 message_passing/request.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/request.dir/build.make examples/CMakeFiles/request.dir/message_passing/request.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/request.dir/build.make examples/CMakeFiles/request.dir/message_passing/request.cpp.s
 .PHONY : message_passing/request.cpp.s
 
 message_passing/typed_calculator.o: message_passing/typed_calculator.cpp.o
@@ -1074,7 +1112,7 @@ message_passing/typed_calculator.o: message_passing/typed_calculator.cpp.o
 
 # target to build an object file
 message_passing/typed_calculator.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/typed_calculator.dir/build.make examples/CMakeFiles/typed_calculator.dir/message_passing/typed_calculator.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/typed_calculator.dir/build.make examples/CMakeFiles/typed_calculator.dir/message_passing/typed_calculator.cpp.o
 .PHONY : message_passing/typed_calculator.cpp.o
 
 message_passing/typed_calculator.i: message_passing/typed_calculator.cpp.i
@@ -1082,7 +1120,7 @@ message_passing/typed_calculator.i: message_passing/typed_calculator.cpp.i
 
 # target to preprocess a source file
 message_passing/typed_calculator.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/typed_calculator.dir/build.make examples/CMakeFiles/typed_calculator.dir/message_passing/typed_calculator.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/typed_calculator.dir/build.make examples/CMakeFiles/typed_calculator.dir/message_passing/typed_calculator.cpp.i
 .PHONY : message_passing/typed_calculator.cpp.i
 
 message_passing/typed_calculator.s: message_passing/typed_calculator.cpp.s
@@ -1090,7 +1128,7 @@ message_passing/typed_calculator.s: message_passing/typed_calculator.cpp.s
 
 # target to generate assembly for a file
 message_passing/typed_calculator.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/typed_calculator.dir/build.make examples/CMakeFiles/typed_calculator.dir/message_passing/typed_calculator.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/typed_calculator.dir/build.make examples/CMakeFiles/typed_calculator.dir/message_passing/typed_calculator.cpp.s
 .PHONY : message_passing/typed_calculator.cpp.s
 
 remoting/distributed_calculator.o: remoting/distributed_calculator.cpp.o
@@ -1098,7 +1136,7 @@ remoting/distributed_calculator.o: remoting/distributed_calculator.cpp.o
 
 # target to build an object file
 remoting/distributed_calculator.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/distributed_calculator.dir/build.make examples/CMakeFiles/distributed_calculator.dir/remoting/distributed_calculator.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/distributed_calculator.dir/build.make examples/CMakeFiles/distributed_calculator.dir/remoting/distributed_calculator.cpp.o
 .PHONY : remoting/distributed_calculator.cpp.o
 
 remoting/distributed_calculator.i: remoting/distributed_calculator.cpp.i
@@ -1106,7 +1144,7 @@ remoting/distributed_calculator.i: remoting/distributed_calculator.cpp.i
 
 # target to preprocess a source file
 remoting/distributed_calculator.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/distributed_calculator.dir/build.make examples/CMakeFiles/distributed_calculator.dir/remoting/distributed_calculator.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/distributed_calculator.dir/build.make examples/CMakeFiles/distributed_calculator.dir/remoting/distributed_calculator.cpp.i
 .PHONY : remoting/distributed_calculator.cpp.i
 
 remoting/distributed_calculator.s: remoting/distributed_calculator.cpp.s
@@ -1114,7 +1152,7 @@ remoting/distributed_calculator.s: remoting/distributed_calculator.cpp.s
 
 # target to generate assembly for a file
 remoting/distributed_calculator.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/distributed_calculator.dir/build.make examples/CMakeFiles/distributed_calculator.dir/remoting/distributed_calculator.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/distributed_calculator.dir/build.make examples/CMakeFiles/distributed_calculator.dir/remoting/distributed_calculator.cpp.s
 .PHONY : remoting/distributed_calculator.cpp.s
 
 remoting/group_chat.o: remoting/group_chat.cpp.o
@@ -1122,7 +1160,7 @@ remoting/group_chat.o: remoting/group_chat.cpp.o
 
 # target to build an object file
 remoting/group_chat.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/group_chat.dir/build.make examples/CMakeFiles/group_chat.dir/remoting/group_chat.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/group_chat.dir/build.make examples/CMakeFiles/group_chat.dir/remoting/group_chat.cpp.o
 .PHONY : remoting/group_chat.cpp.o
 
 remoting/group_chat.i: remoting/group_chat.cpp.i
@@ -1130,7 +1168,7 @@ remoting/group_chat.i: remoting/group_chat.cpp.i
 
 # target to preprocess a source file
 remoting/group_chat.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/group_chat.dir/build.make examples/CMakeFiles/group_chat.dir/remoting/group_chat.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/group_chat.dir/build.make examples/CMakeFiles/group_chat.dir/remoting/group_chat.cpp.i
 .PHONY : remoting/group_chat.cpp.i
 
 remoting/group_chat.s: remoting/group_chat.cpp.s
@@ -1138,7 +1176,7 @@ remoting/group_chat.s: remoting/group_chat.cpp.s
 
 # target to generate assembly for a file
 remoting/group_chat.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/group_chat.dir/build.make examples/CMakeFiles/group_chat.dir/remoting/group_chat.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/group_chat.dir/build.make examples/CMakeFiles/group_chat.dir/remoting/group_chat.cpp.s
 .PHONY : remoting/group_chat.cpp.s
 
 remoting/group_server.o: remoting/group_server.cpp.o
@@ -1146,7 +1184,7 @@ remoting/group_server.o: remoting/group_server.cpp.o
 
 # target to build an object file
 remoting/group_server.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/group_server.dir/build.make examples/CMakeFiles/group_server.dir/remoting/group_server.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/group_server.dir/build.make examples/CMakeFiles/group_server.dir/remoting/group_server.cpp.o
 .PHONY : remoting/group_server.cpp.o
 
 remoting/group_server.i: remoting/group_server.cpp.i
@@ -1154,7 +1192,7 @@ remoting/group_server.i: remoting/group_server.cpp.i
 
 # target to preprocess a source file
 remoting/group_server.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/group_server.dir/build.make examples/CMakeFiles/group_server.dir/remoting/group_server.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/group_server.dir/build.make examples/CMakeFiles/group_server.dir/remoting/group_server.cpp.i
 .PHONY : remoting/group_server.cpp.i
 
 remoting/group_server.s: remoting/group_server.cpp.s
@@ -1162,7 +1200,7 @@ remoting/group_server.s: remoting/group_server.cpp.s
 
 # target to generate assembly for a file
 remoting/group_server.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/group_server.dir/build.make examples/CMakeFiles/group_server.dir/remoting/group_server.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/group_server.dir/build.make examples/CMakeFiles/group_server.dir/remoting/group_server.cpp.s
 .PHONY : remoting/group_server.cpp.s
 
 try.o: try.cpp.o
@@ -1170,7 +1208,7 @@ try.o: try.cpp.o
 
 # target to build an object file
 try.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/try.dir/build.make examples/CMakeFiles/try.dir/try.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/try.dir/build.make examples/CMakeFiles/try.dir/try.cpp.o
 .PHONY : try.cpp.o
 
 try.i: try.cpp.i
@@ -1178,7 +1216,7 @@ try.i: try.cpp.i
 
 # target to preprocess a source file
 try.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/try.dir/build.make examples/CMakeFiles/try.dir/try.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/try.dir/build.make examples/CMakeFiles/try.dir/try.cpp.i
 .PHONY : try.cpp.i
 
 try.s: try.cpp.s
@@ -1186,7 +1224,7 @@ try.s: try.cpp.s
 
 # target to generate assembly for a file
 try.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f examples/CMakeFiles/try.dir/build.make examples/CMakeFiles/try.dir/try.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f examples/CMakeFiles/try.dir/build.make examples/CMakeFiles/try.dir/try.cpp.s
 .PHONY : try.cpp.s
 
 # Help Target
@@ -1201,6 +1239,7 @@ help:
 	@echo "... calculator_behavior"
 	@echo "... cell"
 	@echo "... client"
+	@echo "... curl_fuse"
 	@echo "... custom_types_1"
 	@echo "... custom_types_2"
 	@echo "... custom_types_3"
@@ -1248,6 +1287,9 @@ help:
 	@echo "... composition/dictionary_behavior.o"
 	@echo "... composition/dictionary_behavior.i"
 	@echo "... composition/dictionary_behavior.s"
+	@echo "... curl/curl_fuse.o"
+	@echo "... curl/curl_fuse.i"
+	@echo "... curl/curl_fuse.s"
 	@echo "... custom_type/custom_types_1.o"
 	@echo "... custom_type/custom_types_1.i"
 	@echo "... custom_type/custom_types_1.s"
@@ -1322,6 +1364,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sunmmer/actor/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/net/xiaodong/actor/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

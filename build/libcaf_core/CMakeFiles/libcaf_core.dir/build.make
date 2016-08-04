@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sunmmer/actor/actor-framework
+CMAKE_SOURCE_DIR = /home/net/xiaodong/actor/actor-framework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sunmmer/actor/build
+CMAKE_BINARY_DIR = /home/net/xiaodong/actor/build
 
 # Utility rule file for libcaf_core.
 
@@ -56,10 +56,10 @@ libcaf_core/CMakeFiles/libcaf_core.dir/build: libcaf_core
 .PHONY : libcaf_core/CMakeFiles/libcaf_core.dir/build
 
 libcaf_core/CMakeFiles/libcaf_core.dir/clean:
-	cd /home/sunmmer/actor/build/libcaf_core && $(CMAKE_COMMAND) -P CMakeFiles/libcaf_core.dir/cmake_clean.cmake
+	cd /home/net/xiaodong/actor/build/libcaf_core && $(CMAKE_COMMAND) -P CMakeFiles/libcaf_core.dir/cmake_clean.cmake
 .PHONY : libcaf_core/CMakeFiles/libcaf_core.dir/clean
 
 libcaf_core/CMakeFiles/libcaf_core.dir/depend:
-	cd /home/sunmmer/actor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sunmmer/actor/actor-framework /home/sunmmer/actor/actor-framework/libcaf_core /home/sunmmer/actor/build /home/sunmmer/actor/build/libcaf_core /home/sunmmer/actor/build/libcaf_core/CMakeFiles/libcaf_core.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/net/xiaodong/actor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/net/xiaodong/actor/actor-framework /home/net/xiaodong/actor/actor-framework/libcaf_core /home/net/xiaodong/actor/build /home/net/xiaodong/actor/build/libcaf_core /home/net/xiaodong/actor/build/libcaf_core/CMakeFiles/libcaf_core.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libcaf_core/CMakeFiles/libcaf_core.dir/depend
 

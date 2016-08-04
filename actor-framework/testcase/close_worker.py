@@ -18,20 +18,12 @@ def killmaster():
             pid = string.atoi(result.group(1))
             os.kill(pid, signal.SIGKILL)
 def killworker():
-    process_list = psutil.get_process_list()
-    a = "client"
-    regex = "pid=(\d+),\sname=\'" + a + "\'"
-    pid = 0
-    for line in process_list:
-        process_info = str(line)
-        ini_regex =re.compile(regex)
-        result = ini_regex.search(process_info)
-        if result !=None:
-            pid = string.atoi(result.group(1))
-            os.kill(pid, signal.SIGKILL)
+    with open("/home/net/xiaodong/actor/actor-framework/examples/pid_log.txt","r") as file:
+        for line in file:
+            os.system("ssh net@202.45.128.147 kill "+line+" &")
 def findworkernumber():
     list=[]
-    with open("/home/sunmmer/actor/actor-framework/examples/heartbeat_log.txt","r") as file:
+    with open("/home/net/xiaodong/actor/actor-framework/examples/heartbeat_log.txt","r") as file:
         count =0
         for line in file:
             id=string.atoi(line)
@@ -40,17 +32,18 @@ def findworkernumber():
             count = len(list)
         return count
 def clearlog():
-    with open("/home/sunmmer/actor/actor-framework/examples/heartbeat_log.txt","w") as file:
+    with open("/home/net/xiaodong/actor/actor-framework/examples/heartbeat_log.txt","w") as file:
         file.truncate()
-
+    with open("/home/net/xiaodong/actor/actor-framework/examples/pid_log.txt","w") as file1:
+        file1.truncate()
 
 
 
 num1 = findworkernumber()
-with open("/home/sunmmer/actor/actor-framework/examples/command.txt","w") as file:
+with open("/home/net/xiaodong/actor/actor-framework/examples/command.txt","w") as file:
     file.write("close")
 time.sleep(8)
-with open("/home/sunmmer/actor/actor-framework/examples/command.txt","w") as file:
+with open("/home/net/xiaodong/actor/actor-framework/examples/command.txt","w") as file:
     time.sleep(10)
 num2=findworkernumber()
 if num1==(num2+1):

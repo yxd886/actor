@@ -19,7 +19,7 @@ def killmaster():
             os.kill(pid, signal.SIGKILL)
 def findmaster():
     list=[]
-    with open("/home/sunmmer/actor/actor-framework/examples/heartbeat_log.txt","r") as file:
+    with open("/home/net/xiaodong/actor/actor-framework/examples/heartbeat_log.txt","r") as file:
         for line in file:
             id=string.atoi(line)
             if id not in list:
@@ -30,26 +30,26 @@ def findmaster():
         return False;
             
 def clearlog():
-    with open("/home/sunmmer/actor/actor-framework/examples/heartbeat_log.txt","w") as file1:
+    with open("/home/net/xiaodong/actor/actor-framework/examples/heartbeat_log.txt","w") as file1:
         file1.truncate()
 def clearprelog():
-    with open("/home/sunmmer/actor/actor-framework/examples/after_log","wb") as file2:
+    with open("/home/net/xiaodong/actor/actor-framework/examples/after_log","wb") as file2:
         file2.truncate()
-    with open("/home/sunmmer/actor/actor-framework/examples/before_log","wb") as file3:
+    with open("/home/net/xiaodong/actor/actor-framework/examples/before_log","wb") as file3:
         file3.truncate()
 def clearcommand():
-    with open("/home/sunmmer/actor/actor-framework/examples/command.txt","w") as file4:
+    with open("/home/net/xiaodong/actor/actor-framework/examples/command.txt","w") as file4:
         file4.truncate()
 clearcommand()
 clearprelog()                
 print "start master and run it for 10 seconds\n"
-os.system("nohup /home/sunmmer/actor/build/bin/master &")
+os.system("nohup /home/net/xiaodong/actor/build/bin/master &")
 time.sleep(10)
 killmaster()
 print "kill master, and restart it after 80 seconds\n"
 time.sleep(80)
 clearlog()
-os.system("nohup /home/sunmmer/actor/build/bin/master &")
+os.system("nohup /home/net/xiaodong/actor/build/bin/master &")
 print "restart it right now,and check the state after 10 seconds\n"
 time.sleep(10)
 a=findmaster()

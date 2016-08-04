@@ -31,7 +31,7 @@ def killworker():
             os.kill(pid, signal.SIGKILL)
 def findworkernumber():
     list=[]
-    with open("/home/sunmmer/actor/actor-framework/examples/heartbeat_log.txt","r") as file:
+    with open("/home/net/xiaodong/actor/actor-framework/examples/heartbeat_log.txt","r") as file:
         count =0
         for line in file:
             id=string.atoi(line)
@@ -40,17 +40,17 @@ def findworkernumber():
             count = len(list)
         return count
 def clearlog():
-    with open("/home/sunmmer/actor/actor-framework/examples/heartbeat_log.txt","w") as file:
+    with open("/home/net/xiaodong/actor/actor-framework/examples/heartbeat_log.txt","w") as file:
         file.truncate()
 
 
 
 
 num1 = findworkernumber()
-with open("/home/sunmmer/actor/actor-framework/examples/command.txt","w") as file:
+with open("/home/net/xiaodong/actor/actor-framework/examples/command.txt","w") as file:
     file.write("open")
 time.sleep(8)
-with open("/home/sunmmer/actor/actor-framework/examples/command.txt","w") as file:
+with open("/home/net/xiaodong/actor/actor-framework/examples/command.txt","w") as file:
  time.sleep(10)
 num2=findworkernumber()
 if num1==(num2-1):

@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -Wextra -Wall -pedantic -ftemplate-depth=512 -ftemplate-backtrace-limit=0 -pthread -fPIC -O2 -g -DNDEBUG    CMakeFiles/curl_fuse.dir/curl/curl_fuse.cpp.o  -o ../bin/curl_fuse -rdynamic -ldl ../lib/libcaf_core.so.0.15.0 ../lib/libcaf_io.so.0.15.0 -lcurl ../lib/libcaf_core.so.0.15.0 -Wl,-rpath,/home/net/xiaodong/actor/build/lib 
