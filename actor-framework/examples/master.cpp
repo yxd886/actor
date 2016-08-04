@@ -303,11 +303,24 @@ void readcommand()
         send(this,close_atom::value);
       }
     }
+    if(command=="open")
+    {
+      open_one_worker();
+    }
   }
   last_command = command;
   last_argc =argc;
   in.close();
 
+}
+void open_one_worker()
+{
+  counter ++;
+  do_before_log(counter,ssh_actors.begin()->first,ADD);
+  conn_state.insert(std::pair<int64_t,int64_t>(counter,CONNECT));
+  worker_host.insert(std::pair<int64_t,string>(counter,ssh_actors.begin()->first));
+  do_after_log();
+  send(ssh_actors.begin()->second,start_atom::value,ssh_actors.begin()->first,counter);
 }
     
 };

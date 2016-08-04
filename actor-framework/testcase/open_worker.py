@@ -48,12 +48,12 @@ def clearlog():
 
 num1 = findworkernumber()
 with open("/home/sunmmer/actor/actor-framework/examples/command.txt","w") as file:
-    file.write("close")
+    file.write("open")
 time.sleep(8)
 with open("/home/sunmmer/actor/actor-framework/examples/command.txt","w") as file:
-    time.sleep(10)
+ time.sleep(10)
 num2=findworkernumber()
-if num1==(num2+1):
+if num1==(num2-1):
     print "\033[1;32;40m PASS!"
     print '\033[0m'
     print "\n"
@@ -61,3 +61,6 @@ else:
     print "\033[1;31;40m FAIL!"
     print '\033[0m'
     print "\n"
+
+killworker()
+killmaster()

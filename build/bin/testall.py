@@ -19,3 +19,7 @@ print "\033[1;31;40m"
 print "testing close_worker.py\t\t"
 print '\033[0m'
 os.system("python /home/sunmmer/actor/actor-framework/testcase/close_worker.py")
+print "\033[1;31;40m"
+print "testing open_worker.py\t\t"
+print '\033[0m'
+os.system("python /home/sunmmer/actor/actor-framework/testcase/open_worker.py")

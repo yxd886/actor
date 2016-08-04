@@ -37,7 +37,10 @@ def clearprelog():
         file2.truncate()
     with open("/home/sunmmer/actor/actor-framework/examples/before_log","wb") as file3:
         file3.truncate()
-
+def clearcommand():
+    with open("/home/sunmmer/actor/actor-framework/examples/command.txt","w") as file4:
+        file4.truncate()
+clearcommand()
 clearprelog()                
 print "start master and run it for 10 seconds\n"
 os.system("nohup /home/sunmmer/actor/build/bin/master &")
