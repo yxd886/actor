@@ -88,6 +88,7 @@ public:
    [=](check_atom){
         
          std::map < int64_t, int64_t >::iterator it;
+         string ip;
          for (it = conn_state.begin(); it != conn_state.end(); it++ ) {
                 if(it->second==CONNECT)
                 {
@@ -96,13 +97,14 @@ public:
 
                     aout(this)<<"worker "<<it->first<<" failure,try to restart it!"<<endl;
                     counter ++;
+                    std::map<int64_t,string>::iterator iter;
+		    std::map<int64_t,int64_t>::iterator at;
+		    iter = worker_host.find(it->first);
+	            ip = iter->second;
                     do_before_log(counter,ssh_actors.begin()->first,ADD);
                     conn_state.insert(std::pair<int64_t,int64_t>(counter,CONNECT));
-                    worker_host.insert(std::pair<int64_t,string>(counter,ssh_actors.begin()->first));
+                    worker_host.insert(std::pair<int64_t,string>(counter,ip));
                     do_after_log();
-                    std::map < int64_t, string >::iterator iter;
-                     std::map < int64_t, int64_t >::iterator at;
-                    iter=worker_host.find(it->first);
                     at=it;
                     do_before_log(iter->first,iter->second,REMOVE);
                     conn_state.erase(at);
@@ -114,7 +116,7 @@ public:
                     }
                     pid_worker.erase(at);
                     do_after_log();
-                    send(ssh_actors.begin()->second,start_atom::value,ssh_actors.begin()->first,counter);
+                    send(ssh_actors.begin()->second,start_atom::value,ip,counter);
                     
                      
                 }

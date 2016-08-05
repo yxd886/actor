@@ -21,7 +21,7 @@ def killworker():
     with open("/home/net/xiaodong/actor/actor-framework/examples/pid_log.txt","r") as file:
         for line in file:
             words=line.split(" ")
-            os.system("nohup ssh net@"+words[0]+" kill "+words[1]+" &")
+            os.system("ssh net@"+words[0]+" kill "+words[1])
 def findworker():
     list=[]
     with open("/home/net/xiaodong/actor/actor-framework/examples/heartbeat_log.txt","r") as file:
