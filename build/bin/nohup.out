@@ -1442,3 +1442,1427 @@ entering heartbeat log
 id :5
 receive heartbeat from id:5 it's cpu: 28.4it's pid: 5553
 receive heartbeat from master
+ip:localhost
+spawned a ssh_worker_actor
+spawned a master_actor
+file open success
+getc success
+expected_port: 8888
+publish the  master_actor at CONNECT_PORT
+send start cluster message to mast_actor
+send start cluster message to ssh_actors
+worker : 1 host: localhost
+worker : 1 host: localhost
+worker : 2 host: localhost
+ip:localhost
+get remote actor
+exit:
+connection normal
+step message sent
+ip:localhost
+get remote actor
+exit:
+connection normal
+step message sent
+heartbeat message sent
+run shell script successfully!
+run shell script successfully!
+receive heartbeat from id:1 it's cpu: 0.0it's pid: 6943
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from id:2 it's cpu: 0.0it's pid: 6942
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+heartbeat message sent
+receive heartbeat from master
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from id:2 it's cpu: 44.0it's pid: 6942
+receive heartbeat from master
+heartbeat message sent
+receive heartbeat from id:1 it's cpu: 44.0it's pid: 6943
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from id:2 it's cpu: 43.5it's pid: 6942
+receive heartbeat from master
+heartbeat message sent
+receive heartbeat from id:1 it's cpu: 44.0it's pid: 6943
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from id:2 it's cpu: 43.6it's pid: 6942
+heartbeat message sent
+receive heartbeat from master
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from id:1 it's cpu: 43.8it's pid: 6943
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from id:2 it's cpu: 43.6it's pid: 6942
+receive heartbeat from master
+heartbeat message sent
+receive heartbeat from id:1 it's cpu: 43.8it's pid: 6943
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+heartbeat message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+heartbeat message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+try to reconnect
+reconnecting
+reconnecting message sent  
+received down message
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+ip:localhost
+spawned a ssh_worker_actor
+spawned a master_actor
+file open success
+getc success
+repairing
+file open success
+expected_port: 8888
+publish the  master_actor at CONNECT_PORT
+try to reconnect
+reconnecting
+reconnecting message sent  
+*** connection succeeded
+try to reconnect
+reconnecting
+reconnecting message sent  
+*** connection succeeded
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from id:1 it's cpu: 46.2it's pid: 6943
+receive heartbeat from master
+heartbeat message sent
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from id:2 it's cpu: 46.2it's pid: 6942
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from id:1 it's cpu: 46.1it's pid: 6943
+receive heartbeat from master
+heartbeat message sent
+receive heartbeat from id:2 it's cpu: 46.1it's pid: 6942
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from id:1 it's cpu: 46.0it's pid: 6943
+receive heartbeat from master
+heartbeat message sent
+receive heartbeat from id:2 it's cpu: 46.1it's pid: 6942
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from id:1 it's cpu: 46.0it's pid: 6943
+receive heartbeat from master
+entering heartbeat log
+id :1
+entering heartbeat log
+id :2
+receive heartbeat from id:2 it's cpu: 46.0it's pid: 6942
+heartbeat message sent
+receive heartbeat from master
+exit loop
+worker 1 failure,try to restart it!
+worker : 1 host: localhost
+worker : 2 host: localhost
+worker : 3 host: localhost
+worker : 2 host: localhost
+worker : 3 host: localhost
+worker 2 failure,try to restart it!
+worker : 2 host: localhost
+worker : 3 host: localhost
+worker : 4 host: localhost
+worker : 3 host: localhost
+worker : 4 host: localhost
+exit loop
+ip:localhost
+ip:localhost
+get remote actor
+get remote actor
+exit:
+exit:
+connection normal
+step message sent
+connection normal
+step message sent
+run shell script successfully!
+run shell script successfully!
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:3 it's cpu: 0.0it's pid: 7653
+heartbeat message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 0.0it's pid: 7652
+receive heartbeat from master
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 46.0it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 46.0it's pid: 7652
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 46.0it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+heartbeat message sent
+receive heartbeat from master
+receive heartbeat from id:4 it's cpu: 45.7it's pid: 7652
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 45.8it's pid: 7652
+receive heartbeat from id:3 it's cpu: 45.6it's pid: 7653
+heartbeat message sent
+receive heartbeat from master
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 45.8it's pid: 7652
+receive heartbeat from id:3 it's cpu: 45.8it's pid: 7653
+receive heartbeat from master
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 45.9it's pid: 7652
+receive heartbeat from id:3 it's cpu: 46.0it's pid: 7653
+receive heartbeat from master
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 45.8it's pid: 7652
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:3 it's cpu: 45.8it's pid: 7653
+heartbeat message sent
+receive heartbeat from master
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 45.8it's pid: 7652
+receive heartbeat from id:3 it's cpu: 45.9it's pid: 7653
+receive heartbeat from master
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 45.8it's pid: 7652
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:3 it's cpu: 46.0it's pid: 7653
+receive heartbeat from master
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 45.8it's pid: 7652
+receive heartbeat from master
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:3 it's cpu: 45.9it's pid: 7653
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 45.9it's pid: 7652
+heartbeat message sent
+receive heartbeat from master
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:3 it's cpu: 46.0it's pid: 7653
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 45.9it's pid: 7652
+heartbeat message sent
+receive heartbeat from master
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:3 it's cpu: 46.0it's pid: 7653
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 45.9it's pid: 7652
+receive heartbeat from master
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 44.1it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+receive heartbeat from id:4 it's cpu: 45.9it's pid: 7652
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 44.3it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 45.9it's pid: 7652
+connection normal
+step message sent
+receive heartbeat from master
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 44.4it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 45.8it's pid: 7652
+connection normal
+step message sent
+receive heartbeat from master
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:3 it's cpu: 44.5it's pid: 7653
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+connection normal
+step message sent
+receive heartbeat from id:4 it's cpu: 44.4it's pid: 7652
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 44.5it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+connection normal
+step message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 44.5it's pid: 7652
+receive heartbeat from master
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 44.6it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 44.5it's pid: 7652
+receive heartbeat from master
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 44.6it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+receive heartbeat from id:4 it's cpu: 44.6it's pid: 7652
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:3 it's cpu: 44.7it's pid: 7653
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+connection normal
+step message sent
+receive heartbeat from id:4 it's cpu: 44.7it's pid: 7652
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 44.7it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 44.7it's pid: 7652
+receive heartbeat from master
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:3 it's cpu: 44.8it's pid: 7653
+receive heartbeat from master
+connection normal
+step message sent
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :4
+receive heartbeat from id:4 it's cpu: 44.7it's pid: 7652
+entering close worker part!
+worker : 3 host: localhost
+receive heartbeat from master
+heartbeat message sent
+run shell script successfully!
+receive heartbeat from id:3 it's cpu: 44.7it's pid: 7653
+entering heartbeat log
+id :3
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+receive heartbeat from id:3 it's cpu: 45.8it's pid: 7653
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+receive heartbeat from id:3 it's cpu: 47.5it's pid: 7653
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 49.1it's pid: 7653
+entering heartbeat log
+id :3
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 50.5it's pid: 7653
+entering heartbeat log
+id :3
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+receive heartbeat from id:3 it's cpu: 51.9it's pid: 7653
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+receive heartbeat from id:3 it's cpu: 53.2it's pid: 7653
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+receive heartbeat from id:3 it's cpu: 54.6it's pid: 7653
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+receive heartbeat from id:3 it's cpu: 55.8it's pid: 7653
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+receive heartbeat from id:3 it's cpu: 56.9it's pid: 7653
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from id:3 it's cpu: 57.8it's pid: 7653
+worker : 3 host: localhost
+worker : 5 host: localhost
+receive heartbeat from master
+ip:localhost
+get remote actor
+exit:
+connection normal
+step message sent
+heartbeat message sent
+run shell script successfully!
+receive heartbeat from id:5 it's cpu: 0.0it's pid: 8116
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 57.3it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from id:5 it's cpu: 43.5it's pid: 8116
+receive heartbeat from master
+connection normal
+step message sent
+receive heartbeat from id:3 it's cpu: 56.9it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+heartbeat message sent
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from id:5 it's cpu: 43.2it's pid: 8116
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 56.5it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from master
+connection normal
+step message sent
+receive heartbeat from id:5 it's cpu: 43.1it's pid: 8116
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+heartbeat message sent
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 56.2it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from master
+connection normal
+step message sent
+receive heartbeat from id:5 it's cpu: 43.3it's pid: 8116
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+heartbeat message sent
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+receive heartbeat from id:3 it's cpu: 55.9it's pid: 7653
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from id:5 it's cpu: 43.6it's pid: 8116
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from id:3 it's cpu: 55.6it's pid: 7653
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from id:5 it's cpu: 43.9it's pid: 8116
+receive heartbeat from master
+exit loop
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from id:3 it's cpu: 55.4it's pid: 7653
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+receive heartbeat from id:5 it's cpu: 44.2it's pid: 8116
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from master
+connection normal
+step message sent
+heartbeat message sent
+entering heartbeat log
+id :3
+entering heartbeat log
+id :5
+receive heartbeat from id:3 it's cpu: 55.1it's pid: 7653
+receive heartbeat from master
