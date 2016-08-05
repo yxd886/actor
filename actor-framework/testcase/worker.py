@@ -18,20 +18,13 @@ def killmaster():
             pid = string.atoi(result.group(1))
             os.kill(pid, signal.SIGKILL)
 def killworker():
-    process_list = psutil.get_process_list()
-    a = "client"
-    regex = "pid=(\d+),\sname=\'" + a + "\'"
-    pid = 0
-    for line in process_list:
-        process_info = str(line)
-        ini_regex =re.compile(regex)
-        result = ini_regex.search(process_info)
-        if result !=None:
-            pid = string.atoi(result.group(1))
-            os.kill(pid, signal.SIGKILL)
+    with open("/home/net/xiaodong/actor/actor-framework/examples/pid_log.txt","r") as file:
+        for line in file:
+            words=line.split(" ")
+            os.system("nohup ssh net@"+words[0]+" kill "+words[1]+" &")
 def findworker():
     list=[]
-    with open("/home/sunmmer/actor/actor-framework/examples/heartbeat_log.txt","r") as file:
+    with open("/home/net/xiaodong/actor/actor-framework/examples/heartbeat_log.txt","r") as file:
         for line in file:
             id=string.atoi(line)
             if id not in list:
@@ -41,7 +34,9 @@ def findworker():
                 return True
         return False
 def clearlog():
-    with open("/home/sunmmer/actor/actor-framework/examples/heartbeat_log.txt","w") as file:
+    with open("/home/net/xiaodong/actor/actor-framework/examples/heartbeat_log.txt","w") as file:
+        file.truncate()
+    with open("/home/net/xiaodong/actor/actor-framework/examples/pid_log.txt","w") as file:
         file.truncate()
 
 

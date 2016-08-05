@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sunmmer/actor/actor-framework
+CMAKE_SOURCE_DIR = /home/net/xiaodong/actor/actor-framework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sunmmer/actor/build
+CMAKE_BINARY_DIR = /home/net/xiaodong/actor/build
 
 # Utility rule file for all_unit_tests.
 
@@ -60,6 +60,6 @@ CMakeFiles/all_unit_tests.dir/clean:
 .PHONY : CMakeFiles/all_unit_tests.dir/clean
 
 CMakeFiles/all_unit_tests.dir/depend:
-	cd /home/sunmmer/actor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sunmmer/actor/actor-framework /home/sunmmer/actor/actor-framework /home/sunmmer/actor/build /home/sunmmer/actor/build /home/sunmmer/actor/build/CMakeFiles/all_unit_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/net/xiaodong/actor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/net/xiaodong/actor/actor-framework /home/net/xiaodong/actor/actor-framework /home/net/xiaodong/actor/build /home/net/xiaodong/actor/build /home/net/xiaodong/actor/build/CMakeFiles/all_unit_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/all_unit_tests.dir/depend
 

@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sunmmer/actor/actor-framework
+CMAKE_SOURCE_DIR = /home/net/xiaodong/actor/actor-framework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sunmmer/actor/build
+CMAKE_BINARY_DIR = /home/net/xiaodong/actor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,14 +120,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sunmmer/actor/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sunmmer/actor/build/CMakeFiles /home/sunmmer/actor/build/tools/CMakeFiles/progress.marks
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 tools/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunmmer/actor/build/CMakeFiles 0
+	cd /home/net/xiaodong/actor/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/net/xiaodong/actor/build/CMakeFiles /home/net/xiaodong/actor/build/tools/CMakeFiles/progress.marks
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 tools/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/net/xiaodong/actor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 tools/clean
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 tools/clean
 .PHONY : clean
 
 # The main clean target
@@ -136,22 +136,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 tools/preinstall
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 tools/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 tools/preinstall
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 tools/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sunmmer/actor/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/net/xiaodong/actor/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tools/CMakeFiles/all_tools.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 tools/CMakeFiles/all_tools.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 tools/CMakeFiles/all_tools.dir/rule
 .PHONY : tools/CMakeFiles/all_tools.dir/rule
 
 # Convenience name for target.
@@ -160,12 +160,12 @@ all_tools: tools/CMakeFiles/all_tools.dir/rule
 
 # fast build rule for target.
 all_tools/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f tools/CMakeFiles/all_tools.dir/build.make tools/CMakeFiles/all_tools.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f tools/CMakeFiles/all_tools.dir/build.make tools/CMakeFiles/all_tools.dir/build
 .PHONY : all_tools/fast
 
 # Convenience name for target.
 tools/CMakeFiles/caf-run.dir/rule:
-	cd /home/sunmmer/actor/build && $(MAKE) -f CMakeFiles/Makefile2 tools/CMakeFiles/caf-run.dir/rule
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f CMakeFiles/Makefile2 tools/CMakeFiles/caf-run.dir/rule
 .PHONY : tools/CMakeFiles/caf-run.dir/rule
 
 # Convenience name for target.
@@ -174,7 +174,7 @@ caf-run: tools/CMakeFiles/caf-run.dir/rule
 
 # fast build rule for target.
 caf-run/fast:
-	cd /home/sunmmer/actor/build && $(MAKE) -f tools/CMakeFiles/caf-run.dir/build.make tools/CMakeFiles/caf-run.dir/build
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f tools/CMakeFiles/caf-run.dir/build.make tools/CMakeFiles/caf-run.dir/build
 .PHONY : caf-run/fast
 
 caf-run.o: caf-run.cpp.o
@@ -182,7 +182,7 @@ caf-run.o: caf-run.cpp.o
 
 # target to build an object file
 caf-run.cpp.o:
-	cd /home/sunmmer/actor/build && $(MAKE) -f tools/CMakeFiles/caf-run.dir/build.make tools/CMakeFiles/caf-run.dir/caf-run.cpp.o
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f tools/CMakeFiles/caf-run.dir/build.make tools/CMakeFiles/caf-run.dir/caf-run.cpp.o
 .PHONY : caf-run.cpp.o
 
 caf-run.i: caf-run.cpp.i
@@ -190,7 +190,7 @@ caf-run.i: caf-run.cpp.i
 
 # target to preprocess a source file
 caf-run.cpp.i:
-	cd /home/sunmmer/actor/build && $(MAKE) -f tools/CMakeFiles/caf-run.dir/build.make tools/CMakeFiles/caf-run.dir/caf-run.cpp.i
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f tools/CMakeFiles/caf-run.dir/build.make tools/CMakeFiles/caf-run.dir/caf-run.cpp.i
 .PHONY : caf-run.cpp.i
 
 caf-run.s: caf-run.cpp.s
@@ -198,7 +198,7 @@ caf-run.s: caf-run.cpp.s
 
 # target to generate assembly for a file
 caf-run.cpp.s:
-	cd /home/sunmmer/actor/build && $(MAKE) -f tools/CMakeFiles/caf-run.dir/build.make tools/CMakeFiles/caf-run.dir/caf-run.cpp.s
+	cd /home/net/xiaodong/actor/build && $(MAKE) -f tools/CMakeFiles/caf-run.dir/build.make tools/CMakeFiles/caf-run.dir/caf-run.cpp.s
 .PHONY : caf-run.cpp.s
 
 # Help Target
@@ -230,6 +230,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sunmmer/actor/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/net/xiaodong/actor/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

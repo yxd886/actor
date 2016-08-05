@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sunmmer/actor/actor-framework
+CMAKE_SOURCE_DIR = /home/net/xiaodong/actor/actor-framework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sunmmer/actor/build
+CMAKE_BINARY_DIR = /home/net/xiaodong/actor/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/caf-test.dir/depend.make
@@ -50,18 +50,18 @@ include CMakeFiles/caf-test.dir/progress.make
 include CMakeFiles/caf-test.dir/flags.make
 
 CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_test/src/caf-test.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_test/src/caf-test.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_test/src/caf-test.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_test/src/caf-test.cpp
 
 CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_test/src/caf-test.cpp > CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_test/src/caf-test.cpp > CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.i
 
 CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_test/src/caf-test.cpp -o CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_test/src/caf-test.cpp -o CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.s
 
 CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o.requires:
 .PHONY : CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o.requires
@@ -72,525 +72,19 @@ CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o.provides: CMakeFiles/caf-
 
 CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/ripemd_160.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/ripemd_160.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/ripemd_160.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/ripemd_160.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/custom_exception_handler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/custom_exception_handler.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/custom_exception_handler.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/custom_exception_handler.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/atom.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/atom.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/atom.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/atom.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/local_migration.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/local_migration.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/local_migration.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/local_migration.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/limited_vector.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/limited_vector.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/limited_vector.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/limited_vector.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/composable_behavior.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/composable_behavior.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/composable_behavior.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/composable_behavior.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/constructor_attach.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/constructor_attach.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/constructor_attach.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/constructor_attach.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/blocking_actor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/blocking_actor.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/blocking_actor.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/blocking_actor.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_factory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_factory.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_factory.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_factory.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/stateful_actor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/stateful_actor.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/stateful_actor.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/stateful_actor.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/request_response.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/request_response.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/request_response.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/request_response.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/simple_timeout.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/simple_timeout.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/simple_timeout.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/simple_timeout.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/metaprogramming.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_14)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/metaprogramming.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/metaprogramming.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/metaprogramming.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/intrusive_ptr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_15)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/intrusive_ptr.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/intrusive_ptr.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/intrusive_ptr.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/streambuf.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_16)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/streambuf.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/streambuf.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/streambuf.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_pool.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_17)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_pool.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_pool.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_pool.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/variant.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_18)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/variant.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/variant.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/variant.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/parse_ini.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_19)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/parse_ini.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/parse_ini.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/parse_ini.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/splitter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_20)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/splitter.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/splitter.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/splitter.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_lifetime.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_21)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_lifetime.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_lifetime.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_lifetime.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/adapter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_22)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/adapter.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/adapter.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/adapter.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/optional.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_23)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/optional.cpp
-
-CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/optional.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/optional.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o
-
 CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/serial_reply.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_24)
+CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/serial_reply.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/serial_reply.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/serial_reply.cpp
 
 CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/serial_reply.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/serial_reply.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.i
 
 CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/serial_reply.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/serial_reply.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.s
 
 CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o.requires:
 .PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o.requires
@@ -601,65 +95,249 @@ CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o.provides: CMakeFiles
 
 CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/message.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_25)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/message.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/variant.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/variant.cpp
 
-CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/message.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/variant.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/message.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/variant.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/typed_spawn.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_26)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/typed_spawn.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_termination.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_termination.cpp
 
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/typed_spawn.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_termination.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/typed_spawn.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_termination.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_lifetime.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_lifetime.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_lifetime.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_lifetime.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/custom_exception_handler.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/custom_exception_handler.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/custom_exception_handler.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/custom_exception_handler.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/serialization.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/serialization.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/serialization.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/serialization.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/sequencer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/sequencer.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/sequencer.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/sequencer.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/expected.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/expected.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/expected.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/expected.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/atom.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/atom.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/atom.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/atom.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/composable_behavior.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/composable_behavior.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/composable_behavior.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/composable_behavior.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/dynamic_spawn.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/dynamic_spawn.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/dynamic_spawn.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/dynamic_spawn.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o
 
 CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/message_lifetime.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_27)
+CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/message_lifetime.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/message_lifetime.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/message_lifetime.cpp
 
 CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/message_lifetime.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/message_lifetime.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.i
 
 CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/message_lifetime.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/message_lifetime.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.s
 
 CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o.requires:
 .PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o.requires
@@ -670,111 +348,111 @@ CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o.provides: CMakeF
 
 CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/function_view.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_28)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/function_view.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/parse_ini.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/parse_ini.cpp
 
-CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/function_view.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/parse_ini.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/function_view.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/parse_ini.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/extract.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_29)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/extract.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/intrusive_ptr.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/intrusive_ptr.cpp
 
-CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/extract.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/intrusive_ptr.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/extract.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/intrusive_ptr.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/local_group.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_30)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/local_group.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/limited_vector.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/limited_vector.cpp
 
-CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/local_group.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/limited_vector.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/local_group.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/limited_vector.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/typed_response_promise.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_31)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/typed_response_promise.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/stateful_actor.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/stateful_actor.cpp
 
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/typed_response_promise.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/stateful_actor.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/typed_response_promise.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/stateful_actor.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o
 
 CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/or_else.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_32)
+CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/or_else.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/or_else.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/or_else.cpp
 
 CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/or_else.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/or_else.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.i
 
 CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/or_else.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/or_else.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.s
 
 CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o.requires:
 .PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o.requires
@@ -786,18 +464,18 @@ CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o.provides: CMakeFiles/caf-
 CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o
 
 CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/aout.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_33)
+CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/aout.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/aout.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/aout.cpp
 
 CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/aout.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/aout.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.i
 
 CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/aout.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/aout.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.s
 
 CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o.requires:
 .PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o.requires
@@ -808,134 +486,295 @@ CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o.provides: CMakeFiles/caf-tes
 
 CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/sequencer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_34)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/sequencer.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/local_group.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/local_group.cpp
 
-CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/sequencer.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/local_group.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/sequencer.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/local_group.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/dynamic_spawn.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_35)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/dynamic_spawn.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/function_view.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/function_view.cpp
 
-CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/dynamic_spawn.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/function_view.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/dynamic_spawn.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/function_view.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/request_timeout.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_36)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/request_timeout.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/request_response.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/request_response.cpp
 
-CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/request_timeout.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/request_response.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/request_timeout.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/request_response.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_termination.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_37)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_termination.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/ripemd_160.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/ripemd_160.cpp
 
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_termination.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/ripemd_160.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/actor_termination.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/ripemd_160.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/serialization.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_38)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/serialization.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/local_migration.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/local_migration.cpp
 
-CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/serialization.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/local_migration.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/serialization.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/local_migration.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/splitter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/splitter.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/splitter.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/splitter.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/typed_response_promise.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/typed_response_promise.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/typed_response_promise.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/typed_response_promise.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/metaprogramming.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/metaprogramming.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/metaprogramming.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/metaprogramming.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/typed_spawn.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/typed_spawn.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/typed_spawn.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/typed_spawn.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/blocking_actor.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/blocking_actor.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/blocking_actor.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/blocking_actor.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/adapter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/adapter.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/adapter.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/adapter.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/optional.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/optional.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/optional.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/optional.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o
 
 CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/match.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_39)
+CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/match.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/match.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/match.cpp
 
 CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/match.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/match.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.i
 
 CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/match.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/match.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.s
 
 CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o.requires:
 .PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o.requires
@@ -946,65 +785,249 @@ CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o.provides: CMakeFiles/caf-te
 
 CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_core/test/expected.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_40)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_core/test/expected.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/simple_timeout.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_33)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/simple_timeout.cpp
 
-CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_core/test/expected.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/simple_timeout.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_core/test/expected.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/simple_timeout.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_io/test/remote_actor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_41)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_io/test/remote_actor.cpp
+CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/extract.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_34)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/extract.cpp
 
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_io/test/remote_actor.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.i
+CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/extract.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.i
 
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_io/test/remote_actor.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.s
+CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/extract.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.s
 
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.requires
+CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.requires
 
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.provides
+CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.provides
 
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o
+CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/streambuf.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_35)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/streambuf.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/streambuf.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/streambuf.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/request_timeout.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/request_timeout.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/request_timeout.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/request_timeout.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/constructor_attach.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_37)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/constructor_attach.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/constructor_attach.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/constructor_attach.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_pool.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_pool.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_pool.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_pool.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/message.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_39)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/message.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/message.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/message.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_factory.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_40)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_factory.cpp
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_factory.cpp > CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_core/test/actor_factory.cpp -o CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_io/test/typed_remote_actor.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_41)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_io/test/typed_remote_actor.cpp
+
+CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_io/test/typed_remote_actor.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_io/test/typed_remote_actor.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_io/test/dynamic_broker.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_42)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_io/test/dynamic_broker.cpp
+
+CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_io/test/dynamic_broker.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_io/test/dynamic_broker.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o
 
 CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_io/test/typed_broker.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_42)
+CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_io/test/typed_broker.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_io/test/typed_broker.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_io/test/typed_broker.cpp
 
 CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_io/test/typed_broker.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_io/test/typed_broker.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.i
 
 CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_io/test/typed_broker.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_io/test/typed_broker.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.s
 
 CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o.requires:
 .PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o.requires
@@ -1015,19 +1038,42 @@ CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o.provides: CMakeFiles/c
 
 CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o
 
+CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_io/test/automatic_connection.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_44)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_io/test/automatic_connection.cpp
+
+CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_io/test/automatic_connection.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_io/test/automatic_connection.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o
+
 CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_io/test/basp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_43)
+CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_io/test/basp.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_io/test/basp.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_io/test/basp.cpp
 
 CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_io/test/basp.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_io/test/basp.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.i
 
 CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_io/test/basp.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_io/test/basp.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.s
 
 CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o.requires:
 .PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o.requires
@@ -1038,19 +1084,88 @@ CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o.provides: CMakeFiles/caf-test.
 
 CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o
 
+CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_io/test/unpublish.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_io/test/unpublish.cpp
+
+CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_io/test/unpublish.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_io/test/unpublish.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_io/test/remote_actor.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_47)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_io/test/remote_actor.cpp
+
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_io/test/remote_actor.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_io/test/remote_actor.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o
+
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o: CMakeFiles/caf-test.dir/flags.make
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_io/test/remote_group.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_io/test/remote_group.cpp
+
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_io/test/remote_group.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.i
+
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_io/test/remote_group.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.s
+
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.requires:
+.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.requires
+
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.requires
+	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.provides.build
+.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.provides
+
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o
+
 CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_io/test/http_broker.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_44)
+CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_io/test/http_broker.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_io/test/http_broker.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_io/test/http_broker.cpp
 
 CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_io/test/http_broker.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_io/test/http_broker.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.i
 
 CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_io/test/http_broker.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_io/test/http_broker.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.s
 
 CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o.requires:
 .PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o.requires
@@ -1062,18 +1177,18 @@ CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o.provides: CMakeFiles/ca
 CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o
 
 CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_io/test/remote_spawn.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_45)
+CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o: /home/net/xiaodong/actor/actor-framework/libcaf_io/test/remote_spawn.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/net/xiaodong/actor/build/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_io/test/remote_spawn.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o -c /home/net/xiaodong/actor/actor-framework/libcaf_io/test/remote_spawn.cpp
 
 CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_io/test/remote_spawn.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/net/xiaodong/actor/actor-framework/libcaf_io/test/remote_spawn.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.i
 
 CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_io/test/remote_spawn.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/net/xiaodong/actor/actor-framework/libcaf_io/test/remote_spawn.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.s
 
 CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o.requires:
 .PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o.requires
@@ -1084,227 +1199,112 @@ CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o.provides: CMakeFiles/c
 
 CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o
 
-CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_io/test/dynamic_broker.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_46)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_io/test/dynamic_broker.cpp
-
-CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_io/test/dynamic_broker.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_io/test/dynamic_broker.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_io/test/typed_remote_actor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_47)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_io/test/typed_remote_actor.cpp
-
-CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_io/test/typed_remote_actor.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_io/test/typed_remote_actor.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_io/test/unpublish.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_48)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_io/test/unpublish.cpp
-
-CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_io/test/unpublish.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_io/test/unpublish.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_io/test/automatic_connection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_49)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_io/test/automatic_connection.cpp
-
-CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_io/test/automatic_connection.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_io/test/automatic_connection.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o
-
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o: CMakeFiles/caf-test.dir/flags.make
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o: /home/sunmmer/actor/actor-framework/libcaf_io/test/remote_group.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sunmmer/actor/build/CMakeFiles $(CMAKE_PROGRESS_50)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o -c /home/sunmmer/actor/actor-framework/libcaf_io/test/remote_group.cpp
-
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sunmmer/actor/actor-framework/libcaf_io/test/remote_group.cpp > CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.i
-
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sunmmer/actor/actor-framework/libcaf_io/test/remote_group.cpp -o CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.s
-
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.requires:
-.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.requires
-
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.provides: CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.requires
-	$(MAKE) -f CMakeFiles/caf-test.dir/build.make CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.provides.build
-.PHONY : CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.provides
-
-CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.provides.build: CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o
-
 # Object files for target caf-test
 caf__test_OBJECTS = \
 "CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o" \
 "CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o" \
 "CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o" \
 "CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o" \
 "CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o" \
 "CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o" \
 "CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o" \
 "CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o" \
-"CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o"
+"CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o" \
+"CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o"
 
 # External object files for target caf-test
 caf__test_EXTERNAL_OBJECTS =
 
 bin/caf-test: CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o
 bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o
 bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o
 bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o
 bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o
 bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o
 bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o
 bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o
+bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o
 bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o
 bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o
-bin/caf-test: CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o
 bin/caf-test: CMakeFiles/caf-test.dir/build.make
 bin/caf-test: lib/libcaf_core.so.0.15.0
 bin/caf-test: lib/libcaf_io.so.0.15.0
@@ -1318,55 +1318,55 @@ CMakeFiles/caf-test.dir/build: bin/caf-test
 .PHONY : CMakeFiles/caf-test.dir/build
 
 CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_test/src/caf-test.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.requires
 CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/serial_reply.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/variant.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/actor_lifetime.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/custom_exception_handler.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/atom.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/composable_behavior.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.requires
 CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/message_lifetime.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/parse_ini.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/intrusive_ptr.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/limited_vector.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/stateful_actor.cpp.o.requires
 CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/or_else.cpp.o.requires
 CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/aout.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/sequencer.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/dynamic_spawn.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/actor_termination.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/serialization.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/local_group.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/function_view.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/request_response.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/ripemd_160.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/local_migration.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/splitter.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/typed_response_promise.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/metaprogramming.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/typed_spawn.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/blocking_actor.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/adapter.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/optional.cpp.o.requires
 CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/match.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/expected.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/simple_timeout.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/extract.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/streambuf.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/request_timeout.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/constructor_attach.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/actor_pool.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/message.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_core/test/actor_factory.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.requires
 CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/typed_broker.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.requires
 CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/basp.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/remote_actor.cpp.o.requires
+CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.requires
 CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/http_broker.cpp.o.requires
 CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/remote_spawn.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/dynamic_broker.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/typed_remote_actor.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/unpublish.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/automatic_connection.cpp.o.requires
-CMakeFiles/caf-test.dir/requires: CMakeFiles/caf-test.dir/libcaf_io/test/remote_group.cpp.o.requires
 .PHONY : CMakeFiles/caf-test.dir/requires
 
 CMakeFiles/caf-test.dir/clean:
@@ -1374,6 +1374,6 @@ CMakeFiles/caf-test.dir/clean:
 .PHONY : CMakeFiles/caf-test.dir/clean
 
 CMakeFiles/caf-test.dir/depend:
-	cd /home/sunmmer/actor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sunmmer/actor/actor-framework /home/sunmmer/actor/actor-framework /home/sunmmer/actor/build /home/sunmmer/actor/build /home/sunmmer/actor/build/CMakeFiles/caf-test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/net/xiaodong/actor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/net/xiaodong/actor/actor-framework /home/net/xiaodong/actor/actor-framework /home/net/xiaodong/actor/build /home/net/xiaodong/actor/build /home/net/xiaodong/actor/build/CMakeFiles/caf-test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/caf-test.dir/depend
 
